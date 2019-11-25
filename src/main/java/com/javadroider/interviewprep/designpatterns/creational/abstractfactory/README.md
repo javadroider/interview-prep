@@ -1,0 +1,1 @@
+Abstract Factory pattern is similar to Factory pattern and it’s factory of factories. 

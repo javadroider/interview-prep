@@ -1,0 +1,3 @@
+Our main object, traveller in this case will allow an external entity, a so called container to provide the object. So traveller doesn't have to create an own class from the car or plane object it will get it from the container
+When a object allow dependency injection mechanism.
+The external entity, the container can inject the car or plane object based on a certain logic, a requirement of the traveller.
