@@ -5,7 +5,7 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
-// Check https://prose.io/#javadroider/AlgoDSInJava/edit/master/src/com/javadroider/ds/arrays/Subsets.java
+// Check https://prose.io/#javadroider/interview-prep/edit/master/src/com/javadroider/ds/arrays/Subsets.java
 public class PowerSet {
 
 	public static void main(String[] args) {

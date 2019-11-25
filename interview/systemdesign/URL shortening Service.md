@@ -7,7 +7,7 @@ URL shortening is used to create shorter aliases for long URLs. We call these sh
 
 For example, if we shorten this page through TinyURL:
 
-> [https://github.com/javadroider/AlgoDSInJava](https://github.com/javadroider/AlgoDSInJava)
+> [https://github.com/javadroider/interview-prep](https://github.com/javadroider/interview-prep)
 
 We would get:
 
