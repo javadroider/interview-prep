@@ -14,6 +14,9 @@
   - Java memory model
   - CompletableFuture
   - Features introduced in Java 8, 9, 10, 11, 12
+- Kafka
+  - Connect
+  - Stream
 
 
 ## New Concepts
