@@ -2,18 +2,18 @@ package com.javadroider.interviewprep.ds.tree;
 
 public class PrintAncestorsOfTree {
 
-    static boolean travserse(Node node, Node target) {
-        if (node != null) {
-            if (node == target) {
-                return true;
-            }
-            if (travserse(node.left, target) || travserse(node.right, target)) {
-                System.out.print(node);
-                return true;
-            }
-        }
-        return false;
-    }
+	static boolean travserse(Node node, Node target) {
+		if (node != null) {
+			if (node == target) {
+				return true;
+			}
+			if (travserse(node.left, target) || travserse(node.right, target)) {
+				System.out.print(node);
+				return true;
+			}
+		}
+		return false;
+	}
 
     /*
           10

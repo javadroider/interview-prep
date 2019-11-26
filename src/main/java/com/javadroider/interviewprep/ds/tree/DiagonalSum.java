@@ -13,6 +13,8 @@ public class DiagonalSum {
             d = d + 1
         3. For right child
             d = d ( remains same)
+            
+        https://www.youtube.com/watch?v=I3BC8nEKYm8
     */
     static void diagonalSum(Node node) {
         Queue<Node> queue = new LinkedList<>();

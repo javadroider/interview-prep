@@ -4,6 +4,14 @@ import java.util.Stack;
 
 public class PrinthPathWithGivenSum {
 
+    /*
+		    10
+		  /   \
+		 8     12
+		/ \   /  \
+		7  9  11  13
+
+	*/
     static void print(Node node, Stack<Node> stack, int sum, int k) {
         if (node == null) {
             return;
@@ -20,6 +28,6 @@ public class PrinthPathWithGivenSum {
 
     public static void main(String[] args) {
         Node node = BinaryTree.sample();
-        print(node, new Stack<>(), 0, 35);
+        print(node, new Stack<>(), 0, 22);
     }
 }
