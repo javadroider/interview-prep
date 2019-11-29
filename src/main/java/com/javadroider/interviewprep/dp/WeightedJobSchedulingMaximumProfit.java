@@ -79,12 +79,6 @@ public class WeightedJobSchedulingMaximumProfit {
 
     public static void main(String args[]) {
         Job jobs[] = new Job[6];
-//        jobs[0] = interesting Job(1, 3, 5);
-//        jobs[1] = interesting Job(2, 5, 6);
-//        jobs[2] = interesting Job(4, 6, 5);
-//        jobs[3] = interesting Job(6, 7, 4);
-//        jobs[4] = interesting Job(5, 8, 11);
-//        jobs[5] = interesting Job(7, 9, 2);
 
         jobs[0] = new Job(1, 4, 3);
         jobs[1] = new Job(2, 6, 5);

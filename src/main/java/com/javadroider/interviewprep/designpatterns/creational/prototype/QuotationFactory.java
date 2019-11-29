@@ -3,10 +3,6 @@
  */
 package com.javadroider.interviewprep.designpatterns.creational.prototype;
 
-/**
- * @author Suryakant_Mutnal
- *
- */
 public enum QuotationFactory {
 
 	INSTANCE;
