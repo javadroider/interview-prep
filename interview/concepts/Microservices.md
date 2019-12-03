@@ -36,12 +36,12 @@
 [One](https://dzone.com/articles/tracing-in-microservices-with-spring-cloud-sleuth) | [Two](https://www.baeldung.com/spring-cloud-sleuth-single-application)
 
 ### Support Zipkin
--Add following dependency
-> <dependency 
->  <groupIdorg.springframework.cloud</groupId 
->  <artifactIdspring-cloud-sleuth-zipkin</artifactId 
-></dependency>
--Add spring.zipkin.baseUrl to specify zipkin url
+	- Add following dependency
+	> <dependency 
+	>  <groupIdorg.springframework.cloud</groupId 
+	>  <artifactIdspring-cloud-sleuth-zipkin</artifactId 
+	></dependency>
+	- Add spring.zipkin.baseUrl to specify zipkin url
 
 
 
