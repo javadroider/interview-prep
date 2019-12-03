@@ -1,6 +1,6 @@
 
 ## Tracing in micro-services
-### Spring Cloud Sleuth 
+### Using Spring Cloud Sleuth 
 
 	- Uses [Brave](https://github.com/openzipkin/brave) as the tracing library that adds unique ids to each web request that enters our application
 	- Adds two types of IDs to log. trace ID & span ID. traceId contains set of spanIDs
@@ -43,8 +43,36 @@
 		</dependency>
 	- Add spring.zipkin.baseUrl to specify zipkin url
 
-
-
+## Service discovery using netflix eureka
+### Netflix Eureka
+	- Provides a mechanism to keep a registry of microservices. Provides a identifier to service instead of ip & port.
+    - It consists of the Eureka Server and Eureka clients.
+### Eureka Discovery Server
+	- Add following dependency
+    	<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
+		</dependency>
+    - Add following entries in application.properties
+    	eureka.instance.hostname=localhost
+		eureka.client.register-with-eureka=false
+		eureka.client.fetch-registry=false
+    - Add @EnableEurekaServer to main() method class
+ ### Eureka Client
+ 	- Add dependency
+    	<dependency>
+			<groupId>org.springframework.cloud</groupId>
+			<artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+		</dependency>
+	- Add entries in application.properties to enable talking with server
+    	eureka.client.serviceUrl.defaultZone=http://localhost:8000/eureka/
+		eureka.client.register-with-eureka=true
+    - Declare @LoadBalanced @Autowired private RestTemplate restTemplate;
+	- Using following code you can access other micro services  
+    	    Course course = restTemplate.getForObject("http://course-service/courses/details/" + student.getCourseId(), Course.class);
+            
+ ### Links
+ [Example Repository](https://github.com/codepeekers/service-discovery-using-eureka)| [Reference](https://dzone.com/articles/netflix-eureka-discovery-microservice)
 
 [Design patterns for microservices](https://dzone.com/articles/design-patterns-for-microservices)
 
