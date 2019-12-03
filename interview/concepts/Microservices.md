@@ -32,10 +32,9 @@
  	    	logger.info("I'm in the original span");
 		}
 	- Using LazyTraceExecutor we can propagate traceIds to new threads
+### Links
+[One](https://dzone.com/articles/tracing-in-microservices-with-spring-cloud-sleuth) | [Two](https://www.baeldung.com/spring-cloud-sleuth-single-application)
 
-- [Tracing in Microservices With Spring Cloud Sleuth1](https://dzone.com/articles/tracing-in-microservices-with-spring-cloud-sleuth)
-
-- [Tracing in Microservices With Spring Cloud Sleuth2](https://www.baeldung.com/spring-cloud-sleuth-single-application)
 
 [Design patterns for microservices](https://dzone.com/articles/design-patterns-for-microservices)
 
