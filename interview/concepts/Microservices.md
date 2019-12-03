@@ -37,10 +37,10 @@
 
 ### Support Zipkin
 	- Add following dependency
-	> <dependency 
-	>  <groupIdorg.springframework.cloud</groupId 
-	>  <artifactIdspring-cloud-sleuth-zipkin</artifactId 
-	></dependency>
+	 	<dependency 
+	  		<groupIdorg.springframework.cloud</groupId 
+	  		<artifactIdspring-cloud-sleuth-zipkin</artifactId 
+		</dependency>
 	- Add spring.zipkin.baseUrl to specify zipkin url
 
 
