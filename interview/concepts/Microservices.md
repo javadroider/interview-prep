@@ -58,7 +58,7 @@
 		eureka.client.register-with-eureka=false
 		eureka.client.fetch-registry=false
     - Add @EnableEurekaServer to main() method class
- ### Eureka Client
+### Eureka Client
  	- Add dependency
     	<dependency>
 			<groupId>org.springframework.cloud</groupId>
@@ -71,16 +71,67 @@
 	- Using following code you can access other micro services  
     	    Course course = restTemplate.getForObject("http://course-service/courses/details/" + student.getCourseId(), Course.class);
             
- ### Links
+### Links
  [Example Repository](https://github.com/codepeekers/service-discovery-using-eureka)| [Reference](https://dzone.com/articles/netflix-eureka-discovery-microservice)
+
+## Spring Cloud Circuit Breaker Using Netflix Hystrix
+
+### Netflix Hystrix
+	- Add dependency
+    	<dependency>
+    		<groupId>org.springframework.cloud</groupId>
+    		<artifactId>spring-cloud-starter-netflix-hystrix</artifactId>
+		</dependency>
+    - Add @EnableCircuitBreaker annotation to entry point class
+    - Use @HystrixCommand annotation on any method to apply timeout and fallback method.
+
+### Links
+[Presentation](https://docs.google.com/presentation/d/1hLitnkkutf-aL3DAnYCsmUwattoSe_ZBlSzVUEXfNw8/edit?usp=sharing) | [Code](https://github.com/codepeekers/circuit-breaker-pattern-using-hystrix) | [Reference1](https://dzone.com/articles/microservices-part-4-spring-cloud-circuit-breaker) | [Reference2](https://martinfowler.com/bliki/CircuitBreaker.html)
+
+## Microservices monitoring
+
+### Micrometer
+	- [Micrometer](https://micrometer.io/) is an application metrics eport engine
+    - Supports numerous monitoring systems such as Atlas, Datadog, Prometheus etc
+    - When you add Spring Boot Actuator and micrometer as your dependencies, it auto-configures a composite MeterRegistry 
+    - Having a dependency on micrometer-registry-{system} in your runtime classpath is enough for Spring Boot to configure the registry.
+    - Add dependencies
+    	<!-- Spring boot actuator to expose metrics endpoint -->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+        <!-- Micormeter core dependecy  -->
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-core</artifactId>
+        </dependency>
+        <!-- Micrometer Prometheus registry  -->
+        <dependency>
+            <groupId>io.micrometer</groupId>
+            <artifactId>micrometer-registry-prometheus</artifactId>
+        </dependency>
+    - Enable the actuator and Prometheus endpoints 
+    	#Metrics related configurations
+        management.endpoint.metrics.enabled=true
+        management.endpoints.web.exposure.include=*
+        management.endpoint.prometheus.enabled=true
+        management.metrics.export.prometheus.enabled=true
+	- The link http://localhost:9000/actuator should give actuator endpoints
+    - The link http://localhost:9000/actuator/prometheus gives metrics which will get exposed to prometheus
+
+### Prometheus 
+	- Configure yml file in prometheus to contact http://localhost:9000/actuator/prometheus to get the metrics
+    - Access prometheus using http://localhost:9090 once you start it
+    
+### Links
+[Reference](https://www.callicoder.com/spring-boot-actuator-metrics-monitoring-dashboard-prometheus-grafana/)
+
+	
 
 [Design patterns for microservices](https://dzone.com/articles/design-patterns-for-microservices)
 
-[Service discovery using netflix eureka](https://dzone.com/articles/netflix-eureka-discovery-microservice)
 
-[Ciruit breaker using Netflix Hystrix](https://dzone.com/articles/microservices-part-4-spring-cloud-circuit-breaker)
-
-[Monitoring using prometheus](https://dzone.com/articles/monitoring-using-spring-boot-2-prometheus-and-graf)
 
 [Blue Green deployment](https://dzone.com/articles/blue-green-deployment-for-cloud-native-application)
 
