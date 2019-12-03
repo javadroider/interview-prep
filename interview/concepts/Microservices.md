@@ -1,27 +1,32 @@
-[Tracing in Microservices With Spring Cloud Sleuth](https://dzone.com/articles/tracing-in-microservices-with-spring-cloud-sleuth)
 
-[ Design patterns for microservices ](https://dzone.com/articles/design-patterns-for-microservices)
 
-[ Service discovery using netflix eureka ](https://dzone.com/articles/netflix-eureka-discovery-microservice)
 
-[ Ciruit breaker using Netflix Hystrix ](https://dzone.com/articles/microservices-part-4-spring-cloud-circuit-breaker)
+- [Tracing in Microservices With Spring Cloud Sleuth1](https://dzone.com/articles/tracing-in-microservices-with-spring-cloud-sleuth)
 
-[ Monitoring using prometheus ](https://dzone.com/articles/monitoring-using-spring-boot-2-prometheus-and-graf)
+- [Tracing in Microservices With Spring Cloud Sleuth2](https://www.baeldung.com/spring-cloud-sleuth-single-application)
 
-[ Blue Green deployment ](https://dzone.com/articles/blue-green-deployment-for-cloud-native-application)
+[Design patterns for microservices](https://dzone.com/articles/design-patterns-for-microservices)
 
-[ Transactions in microservices1 ](https://www.baeldung.com/transactions-across-microservices)
+[Service discovery using netflix eureka](https://dzone.com/articles/netflix-eureka-discovery-microservice)
 
-[ Transactions in microservices2 ](https://medium.com/@epatro/how-to-implement-a-two-phase-commit-mechanism-in-a-microservice-e99d9a32445e)
+[Ciruit breaker using Netflix Hystrix](https://dzone.com/articles/microservices-part-4-spring-cloud-circuit-breaker)
 
-[ Transactions in microservices3 ](https://dzone.com/articles/distributed-transactions-with-two-phase-commit-pro)
+[Monitoring using prometheus](https://dzone.com/articles/monitoring-using-spring-boot-2-prometheus-and-graf)
 
-[ Sidecar ]
+[Blue Green deployment](https://dzone.com/articles/blue-green-deployment-for-cloud-native-application)
 
-[ Chained Microservice ]
+[Transactions in microservices1](https://www.baeldung.com/transactions-across-microservices)
 
-[ Branch Microservice ]
+[Transactions in microservices2](https://medium.com/@epatro/how-to-implement-a-two-phase-commit-mechanism-in-a-microservice-e99d9a32445e)
 
-[ Event Sourcing Pattern ]
+[Transactions in microservices3](https://dzone.com/articles/distributed-transactions-with-two-phase-commit-pro)
 
-[ Continuous Delivery Patterns ]
+[Sidecar]
+
+[Chained Microservice]
+
+[Branch Microservice]
+
+[Event Sourcing Pattern]
+
+[Continuous Delivery Patterns]
