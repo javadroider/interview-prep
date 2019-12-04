@@ -54,4 +54,5 @@ select name from employee where emp_id in(select emp_id from employee_salary whe
 -- Find the 3rd highest salary from table without using TOP/limit keyword. https://www.programmerinterview.com/database-sql/find-nth-highest-salary-sql/
 >select salary from employee_salary emp1 where 2 = (select count(distinct (emp2.salary)) from employee_salary emp2 where emp2.salary > emp1.salary);
 
-
+-- Find all employees which are also manager
+select e.name,m.name from employee e, employee m where e.mgr_id=m.emp_id;
