@@ -1,4 +1,4 @@
-package com.javadroider.interviewprep.threads;
+package com.javadroider.interviewprep.concurrency.threads;
 
 public class ThreadPoolTest {
 

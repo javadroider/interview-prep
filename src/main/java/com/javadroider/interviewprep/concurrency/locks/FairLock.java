@@ -1,4 +1,4 @@
-package com.javadroider.interviewprep.threads.locks;
+package com.javadroider.interviewprep.concurrency.locks;
 
 import java.util.ArrayList;
 import java.util.List;

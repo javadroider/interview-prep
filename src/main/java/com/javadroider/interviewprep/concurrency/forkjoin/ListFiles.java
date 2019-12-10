@@ -1,4 +1,4 @@
-package com.javadroider.interviewprep.threads.forkjoin;
+package com.javadroider.interviewprep.concurrency.forkjoin;
 
 import java.io.File;
 import java.util.ArrayList;

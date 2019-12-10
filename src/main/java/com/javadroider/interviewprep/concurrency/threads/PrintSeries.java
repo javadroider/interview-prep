@@ -1,7 +1,7 @@
 /**
  * 
  */
-package com.javadroider.interviewprep.threads;
+package com.javadroider.interviewprep.concurrency.threads;
 
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicInteger;

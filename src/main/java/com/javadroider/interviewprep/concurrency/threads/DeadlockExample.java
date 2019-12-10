@@ -1,4 +1,4 @@
-package com.javadroider.interviewprep.threads;
+package com.javadroider.interviewprep.concurrency.threads;
 
 public class DeadlockExample {
     public static void main(String[] args) {

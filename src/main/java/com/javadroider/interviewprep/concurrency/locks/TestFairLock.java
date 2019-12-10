@@ -1,4 +1,4 @@
-package com.javadroider.interviewprep.threads.locks;
+package com.javadroider.interviewprep.concurrency.locks;
 
 /**
  * Test class to test the Fair lock implementation

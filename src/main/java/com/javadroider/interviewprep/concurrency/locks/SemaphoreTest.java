@@ -1,4 +1,4 @@
-package com.javadroider.interviewprep.concurrency;
+package com.javadroider.interviewprep.concurrency.locks;
 
 import java.util.concurrent.Semaphore;
 
