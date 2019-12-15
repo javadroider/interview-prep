@@ -49,8 +49,6 @@ public class WeightedJobSchedulingMaximumProfit {
      * and see if this job profit plus profit till last non overlapping job is greater
      * than profit till last job.
      *
-     * @param jobs
-     * @return
      */
     public int maximum(Job[] jobs) {
         int T[] = new int[jobs.length];
@@ -63,7 +61,6 @@ public class WeightedJobSchedulingMaximumProfit {
             for (int j = 0; j < i; j++) {
                 if (jobs[j].end <= jobs[i].start) {
                     T[i] = Math.max(T[i], jobs[i].profit + jobs[j].profit);
-                    //break;
                 }
             }
         }

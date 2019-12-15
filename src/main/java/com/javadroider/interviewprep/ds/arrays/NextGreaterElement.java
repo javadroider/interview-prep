@@ -1,9 +1,5 @@
-/**
- * 
- */
 package com.javadroider.interviewprep.ds.arrays;
 
-import java.util.Iterator;
 import java.util.Stack;
 
 //https://www.geeksforgeeks.org/next-greater-element/
@@ -17,7 +13,7 @@ public class NextGreaterElement {
 	}
 
 	private static void printNGE(int[] a, int n) {
-		Stack<Integer> stack = new Stack<Integer>();
+		Stack<Integer> stack = new Stack<>();
 		stack.push(a[0]);
 		for (int i = 1; i < n; i++) {
 
