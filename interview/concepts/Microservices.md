@@ -139,5 +139,4 @@
 ## Transactions in microservices
 
 ### Links
-[Link1](https://www.baeldung.com/transactions-across-microservices) | [Link2](https://medium.com/@epatro/how-to-implement-a-two-phase-commit-mechanism-in-a-microservice-e99d9a32445e) | [Link3](https://dzone.com/articles/distributed-transactions-with-two-phase-commit-pro) | [Link4](https://developers.redhat.com/blog/2018/10/01/patterns-for-distributed-transactions-within-a-microservices-architecture/)
-
+[Link4](https://developers.redhat.com/blog/2018/10/01/patterns-for-distributed-transactions-within-a-microservices-architecture/)
