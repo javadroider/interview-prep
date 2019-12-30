@@ -11,11 +11,14 @@
 - [SQL famous queries](https://github.com/javadroider/interview-prep/blob/master/interview/sql/Queries.md)
 - [System Design](https://github.com/javadroider/algorithm-interview/tree/master/grokking_system_design)
 - Java
-  - [Concurrency in Java](http://tutorials.jenkov.com/java-util-concurrent/index.html)
+  - [Java Concurrency Utilities](http://tutorials.jenkov.com/java-util-concurrent/index.html)
+  - [Concurrency in Java](http://tutorials.jenkov.com/java-concurrency/index.html)
   - Java memory model
   - [CompletableFuture](https://www.callicoder.com/java-8-completablefuture-tutorial/)
   - [Features introduced in Java 8, 9, 10, 11, 12](https://github.com/javadroider/interview-prep/tree/master/interview/java)
   - Garbage Collectors - [One](https://dzone.com/articles/choosing-the-right-gc) | [Two](https://dzone.com/articles/java-garbage-collection-3) 
+  - [How atomic integer works](https://www.javacodemonk.com/what-is-atomicinteger-class-and-how-it-works-internally-1cda6a56)
+  - [Separate Chaining]() | [Open Addressing](https://www.geeksforgeeks.org/hashing-set-3-open-addressing/)
 - [Kafka](https://github.com/javadroider/kafka-tutorial)
   - Connect
   - Stream
