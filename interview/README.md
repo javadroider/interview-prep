@@ -25,6 +25,7 @@
     - Matrix
     - Graphs
     - Dynamic Programming
+    - [Queue Data Structure Practice Problems and Interview Questions](https://medium.com/@codingfreak/queue-data-structure-practice-problems-and-interview-questions-f459bf0578db)
 
 
 ## New Concepts
