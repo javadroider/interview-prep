@@ -31,6 +31,7 @@
     - Graphs
     - Dynamic Programming
     - [Queue Data Structure Practice Problems and Interview Questions](https://medium.com/@codingfreak/queue-data-structure-practice-problems-and-interview-questions-f459bf0578db)
+    - [Random Questions](https://github.com/javadroider/interview-prep/blob/master/interview/questions/Random-Questions.md)
  - [Behavioural Questions](https://github.com/javadroider/interview-prep/blob/master/interview/questions/Behavioral.md)
 
 
