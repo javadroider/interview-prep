@@ -9,6 +9,7 @@
 - [Spring cache](https://howtodoinjava.com/spring-boot2/spring-boot-cache-example/)
 - Bitwise operations
 - [SQL famous queries](https://github.com/javadroider/interview-prep/blob/master/interview/sql/Queries.md)
+- [System Design](https://github.com/javadroider/algorithm-interview/tree/master/grokking_system_design)
 - Java
   - [Concurrency in Java](http://tutorials.jenkov.com/java-util-concurrent/index.html)
   - Java memory model
