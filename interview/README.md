@@ -20,7 +20,7 @@
   - Stream
 - Cassandra
 - Data Structures and Algorithms
-	- Trees
+    - Trees
     - Linked Lists
     - Matrix
     - Graphs
@@ -28,8 +28,6 @@
 
 
 ## New Concepts
-- JMH
-- Codacy
-- Katacoda
+- [JMH](http://tutorials.jenkov.com/java-performance/jmh.html)
 - [Brave](https://github.com/openzipkin/brave)
 - [Varnish](https://varnish-cache.org/intro/)
