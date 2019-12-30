@@ -1,25 +1,25 @@
 
 # Interview preparation topics
 
-- Design patterns
-- Design principles
-- Architectural patterns
-- Micro services
-- CAP theorem
+- Design patterns [One](https://github.com/javadroider/design-patterns-for-humans) | [Two](https://github.com/javadroider/interview-prep/tree/master/src/main/java/com/javadroider/interviewprep/designpatterns)
+- [Design principles](https://github.com/javadroider/interview-prep/blob/master/interview/concepts/Design%20Principles.md)
+- [Architectural patterns](https://github.com/javadroider/interview-prep/blob/master/interview/concepts/Architectural%20Patterns.md)
+- [Micro services](https://github.com/javadroider/interview-prep/blob/master/interview/concepts/Microservices.md)
+- [CAP theorem](https://github.com/javadroider/interview-prep/blob/master/interview/concepts/CAP%20Theorem.md)
 - [Spring cache](https://howtodoinjava.com/spring-boot2/spring-boot-cache-example/)
 - Bitwise operations
-- SQL famous queries
+- [SQL famous queries](https://github.com/javadroider/interview-prep/blob/master/interview/sql/Queries.md)
 - Java
   - [Concurrency in Java](http://tutorials.jenkov.com/java-util-concurrent/index.html)
   - Java memory model
   - [CompletableFuture](https://www.callicoder.com/java-8-completablefuture-tutorial/)
-  - Features introduced in Java 8, 9, 10, 11, 12
+  - [Features introduced in Java 8, 9, 10, 11, 12](https://github.com/javadroider/interview-prep/tree/master/interview/java)
   - Garbage Collectors - [One](https://dzone.com/articles/choosing-the-right-gc) | [Two](https://dzone.com/articles/java-garbage-collection-3) 
-- Kafka
+- [Kafka](https://github.com/javadroider/kafka-tutorial)
   - Connect
   - Stream
 - Cassandra
-- Data Structures and Algorithms
+- [Data Structures and Algorithms](https://github.com/javadroider/interview-prep/tree/master/src/main/java/com/javadroider/interviewprep)
     - Trees
     - Linked Lists
     - Matrix
