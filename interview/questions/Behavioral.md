@@ -8,6 +8,8 @@
  - Tell about a time you had to deal with a conflict in your team  
  - Describe an interesting/difficult problem you worked on  
 
+### SAR (Situation-Action-Result) technique examples
+
 ## Example 1: Tuning performance
 **Situation**: Performance problem where the application server had to be restarted every second day.
 
