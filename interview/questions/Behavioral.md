@@ -8,9 +8,9 @@
  - Tell about a time you had to deal with a conflict in your team  
  - Describe an interesting/difficult problem you worked on  
 
-### SAR (Situation-Action-Result) technique examples
+## SAR (Situation-Action-Result) technique examples
 
-## Example 1: Tuning performance
+### Example 1: Tuning performance
 **Situation**: Performance problem where the application server had to be restarted every second day.
 
 **Action**:
@@ -23,7 +23,7 @@
 - Load and endurance tested the fixed code with the load testing tool JMeter to confirm that the issue has been fixed.
 
 
-## Example 2: Code quality
+### Example 2: Code quality
 
 **Situation**: Java code that is hard to maintain and reuse. Changes to one module may break another module.
 
@@ -37,7 +37,7 @@
 
 **Result**: The application became much easier to maintain, extend, and reuse. The test coverage was increased from 27% to 76%.
 
-## Example 3: Concurrency Management
+### Example 3: Concurrency Management
 **Situation**: The production ready application consumed very less CPU and response times were very poor due to heavy I/O operations like database read/write operations.
 
 **Action**:
