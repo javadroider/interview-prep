@@ -1,3 +1,13 @@
+## Behavioural Questions
+Tell me a time when you had a conflict in the team.
+Tell me a time when you did something that had a big impact.
+Tell me a time when you had to take responsability of someone else mistake  
+What sources do you read? Tell me two books you recently read?  
+Tell me about most challenging project worked on?
+Tell me what was the biggest bug you shipped and what it meant for the user and the company. What were the learning you took away from the situation?  
+Tell about a time you had to deal with a conflict in your team  
+Describe an interesting/difficult problem you worked on  
+
 ## Example 1: Tuning performance
 **Situation**: Performance problem where the application server had to be restarted every second day.
 
