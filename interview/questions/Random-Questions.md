@@ -3,3 +3,4 @@
 3. [Convert Integer to Roman](https://algorithms.tutorialhorizon.com/convert-integer-to-roman/)
 4. [Remove vowels from a string stored in a Binary Tree](https://www.geeksforgeeks.org/remove-vowels-from-a-string-stored-in-a-binary-tree/)
 5. [Sort a stack using a temporary stack](https://www.geeksforgeeks.org/sort-stack-using-temporary-stack/)
+6. [Find maximum meetings in one room](https://www.geeksforgeeks.org/find-maximum-meetings-in-one-room/)
