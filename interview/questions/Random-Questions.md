@@ -5,3 +5,4 @@
 5. [Sort a stack using a temporary stack](https://www.geeksforgeeks.org/sort-stack-using-temporary-stack/)
 6. [Find maximum meetings in one room](https://www.geeksforgeeks.org/find-maximum-meetings-in-one-room/)
 7. [Build a Sudoku Solver in Java](https://medium.com/javarevisited/build-a-sudoku-solver-in-java-part-1-c308bd511481)
+8. [Construct binary tree given an array](https://www.geeksforgeeks.org/construct-complete-binary-tree-given-array/)
