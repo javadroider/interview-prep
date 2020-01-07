@@ -1,10 +1,10 @@
-Creattional (FABS P)
+#Creational (FABS P)
 
-    Prototype pattern creates object based on an existing object through cloning.
+Prototype pattern creates object based on an existing object through cloning.
 
-    Singleton ensures that only one object of a particular class is ever created.
+Singleton ensures that only one object of a particular class is ever created.
 
-Structural (DAFF CP)
+#Structural (DAFF CP)
 
     Decorator pattern lets you dynamically change the behavior of an object at run time by wrapping them in an object of a decorator class.
 
@@ -18,7 +18,7 @@ Structural (DAFF CP)
 
     Using the proxy pattern, a class represents the functionality of another class.
 
-Behavioral (COSMIST CV)
+#Behavioral (COSMIST CV)
 
     COR helps building a chain of objects. Request enters from one end and keeps going from object to object till it finds the suitable handler.
 
