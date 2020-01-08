@@ -14,7 +14,7 @@ Facade pattern provides a simplified interface to a complex subsystem.
 
 Flyweight is used to minimize memory usage or computational expenses by sharing as much as possible with similar objects.
 
-Composite pattern lets clients treat the individual objects in a uniform manner.
+Composite pattern is used when we have to represent a part-whole hierarchy.
 
 Using the proxy pattern, a class represents the functionality of another class.
 
