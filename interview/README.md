@@ -19,7 +19,7 @@
   - [Features introduced in Java 8, 9, 10, 11, 12](https://github.com/javadroider/interview-prep/tree/master/interview/java)
   - Garbage Collectors - [One](https://dzone.com/articles/choosing-the-right-gc) | [Two](https://dzone.com/articles/java-garbage-collection-3) 
   - [How atomic integer works](https://www.javacodemonk.com/what-is-atomicinteger-class-and-how-it-works-internally-1cda6a56)
-  - [Separate Chaining]() | [Open Addressing](https://www.geeksforgeeks.org/hashing-set-3-open-addressing/)
+  - [Separate Chaining](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/) | [Open Addressing](https://www.geeksforgeeks.org/hashing-set-3-open-addressing/) | [Cuckoo Hashing](https://www.geeksforgeeks.org/cuckoo-hashing/)
 - [Kafka](https://github.com/javadroider/kafka-tutorial)
   - Connect
   - Stream
