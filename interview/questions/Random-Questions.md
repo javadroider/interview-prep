@@ -1,9 +1,1 @@
-1. [Determine the given routing number belong to which bank](https://algorithms.tutorialhorizon.com/determine-the-given-routing-number-belong-to-which-bank/)
-2. [Find intersection of two Linked Lists - O(m + n) Time Complexity and O(1) Space Complexity](https://www.ideserve.co.in/learn/find-intersection-of-two-linked-lists-constant-space)
-3. [Convert Integer to Roman](https://algorithms.tutorialhorizon.com/convert-integer-to-roman/)
-4. [Remove vowels from a string stored in a Binary Tree](https://www.geeksforgeeks.org/remove-vowels-from-a-string-stored-in-a-binary-tree/)
-5. [Sort a stack using a temporary stack](https://www.geeksforgeeks.org/sort-stack-using-temporary-stack/)
-6. [Find maximum meetings in one room](https://www.geeksforgeeks.org/find-maximum-meetings-in-one-room/)
-7. [Build a Sudoku Solver in Java](https://medium.com/javarevisited/build-a-sudoku-solver-in-java-part-1-c308bd511481)
-8. [Construct binary tree given an array](https://www.geeksforgeeks.org/construct-complete-binary-tree-given-array/)
-9. [Top 10 occurring words in a very large file java algorithm](https://www.javacodemonk.com/top-10-occurring-words-in-a-very-large-file-java-algorithm-f42e0e67)
+
