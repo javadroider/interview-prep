@@ -27,6 +27,8 @@
 - [Data Structures and Algorithms](https://github.com/javadroider/interview-prep/tree/master/src/main/java/com/javadroider/interviewprep)
     - [Linked Lists](#linked-list-problems)
     - [Trees](#tree-problems)
+    - [Stacks](#stack-problems)
+    - [Queues](#queue-problems)
     - Matrix
     - Graphs
     - Dynamic Programming
@@ -107,3 +109,17 @@ Tree Problems
 - Convert a Binary Tree to BST by maintaining its original structure
 - Invert given Binary Tree | Recursive and Iterative solution
 - Print leaf to root path for every leaf node in a binary tree
+
+Stack Problems
+--------------
+1. Design a stack which returns minimum element in constant time
+2. Check if given expression is balanced expression or not
+
+### To be done
+- [Design a stack which returns minimum element without using auxiliary stack](https://www.techiedelight.com/design-a-stack-which-returns-minimum-element-without-using-auxiliary-stack/)
+
+Queue Problems
+--------------
+
+Matrix Problems
+--------------
