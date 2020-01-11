@@ -26,7 +26,7 @@
 - Cassandra
 - [Data Structures and Algorithms](https://github.com/javadroider/interview-prep/tree/master/src/main/java/com/javadroider/interviewprep)
     - [Linked Lists](#linked-list-problems)
-    - Trees
+    - [Trees](#tree-problems)
     - Matrix
     - Graphs
     - Dynamic Programming
@@ -46,4 +46,64 @@ Data Structures and Algorithms
 
 Linked List Problems
 --------------
-1. Find middle element
+1. Find the middle element of a singly linked list in one pass
+2. Reverse a singly linked list with recursion
+3. Remove duplicate nodes in an unsorted linked list
+4. Find the length of a singly linked list
+5. Check if a given linked list contains a cycle? How do you find the starting node of the cycle
+6. Reverse a linked list
+7. Find the nth node from the end in a singly linked list
+8. Merge two sorted linked list
+9. Find the sum of two linked lists using Stack 
+
+Tree Problems
+--------------
+1. Check if two given binary trees are identical or not | Iterative & Recursive
+2. Calculate height of a binary tree | Iterative & Recursive
+3. Inorder Tree Traversal | Iterative & Recursive
+4. Preorder Tree Traversal | Iterative & Recursive
+5. Postorder Tree Traversal | Iterative & Recursive
+6. Level Order Traversal of Binary Tree
+7. Spiral Order Traversal of Binary Tree
+8. Reverse Level Order Traversal of Binary Tree
+9. Print Left View of a Binary Tree
+10. Print Right View of a Binary Tree
+11. Print Bottom View of Binary Tree
+12. Print Top View of Binary Tree
+13. Find diameter of a binary tree
+14. Convert binary tree to its mirror
+15. Find Lowest Common Ancestor (LCA) of two nodes in a binary tree
+16. Print all paths from root to leaf nodes in given binary tree
+17. Find ancestors of given node in a Binary Tree
+18. Find Vertical Sum in a given Binary Tree
+19. Find the diagonal sum of given binary tree
+20. Find node having maximum value in binary tree
+21. Find size of a binary tree
+22. Find number of leaves in a binary tree
+23. Find level that has maximum sum
+24. Check existence of path with given sum
+25. Find sum of all nodes
+
+
+### To be done | [source](https://medium.com/@codingfreak/binary-tree-interview-questions-and-practice-problems-439df7e5ea1f)
+
+- Print all nodes of a given binary tree in specific order
+- Find next node in same level for given node in a binary tree
+- Check if given binary tree is complete binary tree or not
+- Determine if given two nodes are cousins of each other
+- Print cousins of given node in a binary tree
+- Determine if given binary tree is a subtree of another binary tree or not
+- Check if given binary Tree has symmetric structure or not
+- Find the distance between given pairs of nodes in a binary tree
+- Print nodes in vertical order of a given Binary Tree (Vertical Traversal)
+- Print Diagonal Traversal of Binary Tree
+- Print corner nodes of every level in binary tree
+- In-place convert convert given Binary Tree to Doubly Linked List
+- Sink nodes containing zero to the bottom of the binary tree
+- Convert given binary tree to full tree by removing half nodes
+- Truncate given binary tree to remove nodes which lie on a path having sum less than K
+- Find maximum sum root-to-leaf path in a binary tree
+- Determine if given Binary Tree is a BST or not
+- Convert a Binary Tree to BST by maintaining its original structure
+- Invert given Binary Tree | Recursive and Iterative solution
+- Print leaf to root path for every leaf node in a binary tree
