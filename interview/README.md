@@ -29,12 +29,12 @@
     - [Trees](#tree-problems)
     - [Stacks](#stack-problems)
     - [Queues](#queue-problems)
-    - Matrix
-    - Graphs
-    - Dynamic Programming
+    - [Matrix](#matrix-problems)
+    - [Dynamic Programming](#dynamic-programming-problems)
+    - [Graphs](#graph-problems)
     - [Queue Data Structure Practice Problems and Interview Questions](https://medium.com/@codingfreak/queue-data-structure-practice-problems-and-interview-questions-f459bf0578db)
     - [Random Questions](https://github.com/javadroider/interview-prep/blob/master/interview/questions/Random-Questions.md)
- - [Behavioural Questions](https://github.com/javadroider/interview-prep/blob/master/interview/questions/Behavioral.md)
+    - [Behavioural Questions](https://github.com/javadroider/interview-prep/blob/master/interview/questions/Behavioral.md)
 
 
 # New Concepts
@@ -114,12 +114,17 @@ Stack Problems
 --------------
 1. Design a stack which returns minimum element in constant time
 2. Check if given expression is balanced expression or not
+3. Stock Buy Sell to Maximize Profit
 
 ### To be done
 - [Design a stack which returns minimum element without using auxiliary stack](https://www.techiedelight.com/design-a-stack-which-returns-minimum-element-without-using-auxiliary-stack/)
 
 Queue Problems
 --------------
+1. Implement stack using queues
+2. Implement Queue using stacks
+3. Given an array and integer k, write an algorithm to find the maximum element in each subarray of size k
 
 Matrix Problems
 --------------
+1. Print matrix diagonally
