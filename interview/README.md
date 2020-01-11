@@ -44,6 +44,6 @@
 Data Structures and Algorithms
 ==========================
 
-Linked Lists Problems
+Linked List Problems
 --------------
 1. Find middle element
