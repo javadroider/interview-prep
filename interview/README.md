@@ -31,6 +31,8 @@
     - [Queues](#queue-problems)
     - [Matrix](#matrix-problems)
     - [Dynamic Programming](#dynamic-programming-problems)
+    - [Misc](#misc-problems)
+    - [Arrays](#array-problems)
     - [Graphs](#graph-problems)
     - [Queue Data Structure Practice Problems and Interview Questions](https://medium.com/@codingfreak/queue-data-structure-practice-problems-and-interview-questions-f459bf0578db)
     - [Random Questions](https://github.com/javadroider/interview-prep/blob/master/interview/questions/Random-Questions.md)
@@ -57,6 +59,8 @@ Linked List Problems
 7. Find the nth node from the end in a singly linked list
 8. Merge two sorted linked list
 9. Find the sum of two linked lists using Stack 
+10. [Find intersection of two Linked Lists - O(m + n) Time Complexity and O(1) Space Complexity](https://www.ideserve.co.in/learn/find-intersection-of-two-linked-lists-constant-space)
+
 
 Tree Problems
 --------------
@@ -85,6 +89,8 @@ Tree Problems
 23. Find level that has maximum sum
 24. Check existence of path with given sum
 25. Find sum of all nodes
+26. [Remove vowels from a string stored in a Binary Tree](https://www.geeksforgeeks.org/remove-vowels-from-a-string-stored-in-a-binary-tree/)
+27. [Construct binary tree given an array](https://www.geeksforgeeks.org/construct-complete-binary-tree-given-array/)
 
 
 ### To be done | [source](https://medium.com/@codingfreak/binary-tree-interview-questions-and-practice-problems-439df7e5ea1f)
@@ -124,7 +130,39 @@ Queue Problems
 1. Implement stack using queues
 2. Implement Queue using stacks
 3. Given an array and integer k, write an algorithm to find the maximum element in each subarray of size k
+4. [Sort a stack using a temporary stack](https://www.geeksforgeeks.org/sort-stack-using-temporary-stack/)
 
 Matrix Problems
 --------------
 1. Print matrix diagonally
+
+Dynamic Programming Problems
+--------------
+1. Edit Distance
+2. Subset Sum Problem
+3. 0-1 Knapsack Problem
+4. Rod Cutting
+5. Coin change problem
+6. Count the number of islands
+7. Weighted Job Scheduling
+8. Count and print all Subarrays with product less than K in O(n)
+9. [Find maximum meetings in one room](https://www.geeksforgeeks.org/find-maximum-meetings-in-one-room/)
+
+### To be done | [source](https://www.geeksforgeeks.org/top-20-dynamic-programming-interview-questions/)
+
+Array Problems
+--------------
+1. Longest Increasing Subsequence 
+2. Largest Sum Contiguous Subarray
+3. Find the Missing Number in the array
+4. Print all subsets of an array
+5. Sort an array of 0s, 1s and 2s
+
+Misc Problems
+--------------
+1. [Determine the given routing number belong to which bank](https://algorithms.tutorialhorizon.com/determine-the-given-routing-number-belong-to-which-bank/)
+2. [Convert Integer to Roman](https://algorithms.tutorialhorizon.com/convert-integer-to-roman/)
+3. [Top 10 occurring words in a very large file java algorithm](https://www.javacodemonk.com/top-10-occurring-words-in-a-very-large-file-java-algorithm-f42e0e67)
+4. [Build a Sudoku Solver in Java](https://medium.com/javarevisited/build-a-sudoku-solver-in-java-part-1-c308bd511481)
+
+
