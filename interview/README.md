@@ -25,8 +25,8 @@
   - Stream
 - Cassandra
 - [Data Structures and Algorithms](https://github.com/javadroider/interview-prep/tree/master/src/main/java/com/javadroider/interviewprep)
+    - [Linked Lists](#linked-list-problems)
     - Trees
-    - Linked Lists
     - Matrix
     - Graphs
     - Dynamic Programming
@@ -35,7 +35,15 @@
  - [Behavioural Questions](https://github.com/javadroider/interview-prep/blob/master/interview/questions/Behavioral.md)
 
 
-## New Concepts
+# New Concepts
 - [JMH](http://tutorials.jenkov.com/java-performance/jmh.html)
 - [Brave](https://github.com/openzipkin/brave)
 - [Varnish](https://varnish-cache.org/intro/)
+
+
+Data Structures and Algorithms
+==========================
+
+Linked Lists Problems
+--------------
+1. Find middle element
