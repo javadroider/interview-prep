@@ -119,6 +119,9 @@ Stack Problems
 1. Design a stack which returns minimum element in constant time
 2. Check if given expression is balanced expression or not
 3. Stock Buy Sell to Maximize Profit
+4. [Sort a stack using recursion](https://www.geeksforgeeks.org/sort-a-stack-using-recursion/)
+5. [Sort a stack using a temporary stack](https://www.geeksforgeeks.org/sort-stack-using-temporary-stack/)
+6. [Reverse a stack using recursion](https://www.geeksforgeeks.org/reverse-a-stack-using-recursion/)
 
 ### To be done
 - [Design a stack which returns minimum element without using auxiliary stack](https://www.techiedelight.com/design-a-stack-which-returns-minimum-element-without-using-auxiliary-stack/)
