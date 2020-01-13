@@ -89,16 +89,17 @@ Tree Problems
 25. Find sum of all nodes
 26. [Remove vowels from a string stored in a Binary Tree](https://www.geeksforgeeks.org/remove-vowels-from-a-string-stored-in-a-binary-tree/)
 27. [Construct binary tree given an array](https://www.geeksforgeeks.org/construct-complete-binary-tree-given-array/)
-
+28. [Print all nodes of a given binary tree in specific order](https://www.techiedelight.com/print-nodes-binary-tree-specific-order/)
+29. [Find next node in same level for given node in a binary tree](https://www.techiedelight.com/find-next-node-in-same-level-binary-tree/)
+30. Determine if given two nodes are cousins of each other
+31. [In-place convert given binary tree to its sum tree](https://www.techiedelight.com/inplace-convert-a-tree-sum-tree/)
+32. [Check if given binary tree is a sum tree or not](https://www.techiedelight.com/check-given-binary-tree-sum-tree-not/)
+32. [Determine if given binary tree is a subtree of another binary tree or not](https://www.techiedelight.com/determine-given-binary-tree-is-subtree-of-another-binary-tree-not/)
 
 ### To be done | [source](https://medium.com/@codingfreak/binary-tree-interview-questions-and-practice-problems-439df7e5ea1f)
 
-- Print all nodes of a given binary tree in specific order
-- Find next node in same level for given node in a binary tree
 - Check if given binary tree is complete binary tree or not
-- Determine if given two nodes are cousins of each other
 - Print cousins of given node in a binary tree
-- Determine if given binary tree is a subtree of another binary tree or not
 - Check if given binary Tree has symmetric structure or not
 - Find the distance between given pairs of nodes in a binary tree
 - Print nodes in vertical order of a given Binary Tree (Vertical Traversal)
