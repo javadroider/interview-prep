@@ -130,7 +130,7 @@ Queue Problems
 --------------
 1. Implement stack using queues
 2. Implement Queue using stacks
-3. Given an array and integer k, write an algorithm to find the maximum element in each subarray of size k
+3. [Given an array and integer k, write an algorithm to find the maximum element in each subarray of size k](https://algorithms.tutorialhorizon.com/sliding-window-algorithm-track-the-maximum-of-each-subarray-of-size-k/)
 4. [Sort a stack using a temporary stack](https://www.geeksforgeeks.org/sort-stack-using-temporary-stack/)
 
 Matrix Problems
