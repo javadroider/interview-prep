@@ -15,8 +15,16 @@ select count(*),user_id from orders group by user_id order by count(*) desc;
 Total sum of orders that were placed in 2019
 
 select sum(total) from orders where year(created_at)=2019;
+CREATE INDEX IF NOT EXISTS idx_orders_created_at on orders (created_at);
 select sum(total) from orders where created_at between '2019-01-01 00:00:00' and '2019-12-31 23:59:59';
+DROP INDEX idx_orders_created_at ON orders;
+CREATE INDEX IF NOT EXISTS idx_orders_created_at_total on orders (created_at,total);
+
+DROP INDEX idx_orders_created_at_total ON orders;
+CREATE INDEX IF NOT EXISTS idx_orders_created_at_total_user_id on orders (created_at,total,user_id);
+
 select sum(total) from orders force index (idx_orders_created_at) where created_at between '2019-01-01 00:00:00' and '2019-12-31 23:59:59';
+
 select sum(total) from orders where created_at between '2019-01-01 00:00:00' and '2019-12-31 23:59:59' and user_id=153;
 
 explain select sum(total) from orders where year(created_at)=2019;
@@ -24,11 +32,7 @@ explain select sum(total) from orders where created_at between '2019-01-01 00:00
 explain select sum(total) from orders force index (idx_orders_created_at) where created_at between '2019-01-01 00:00:00' and '2019-12-31 23:59:59';
 explain select sum(total) from orders where created_at between '2019-01-01 00:00:00' and '2019-12-31 23:59:59' and user_id=153;
 
-CREATE INDEX IF NOT EXISTS idx_orders_created_at on orders (created_at);
-DROP INDEX idx_orders_created_at ON orders;
-CREATE INDEX IF NOT EXISTS idx_orders_created_at_total on orders (created_at,total);
-DROP INDEX idx_orders_created_at_total ON orders;
-CREATE INDEX IF NOT EXISTS idx_orders_created_at_total_user_id on orders (created_at,total,user_id);
+
 DROP INDEX idx_orders_created_at_total_user_id ON orders;
 CREATE INDEX IF NOT EXISTS idx_orders_created_at_user_id_total on orders (created_at,user_id,total);
 DROP INDEX idx_orders_created_at_user_id_total ON orders;
