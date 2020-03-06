@@ -17,6 +17,7 @@ public class LevelOrderTraversal {
     private static void traverse(Node node) {
         Queue<Node> queue = new LinkedList<>();
         queue.add(node);
+        String str = "";
         while (!queue.isEmpty()) {
             Node temp = queue.remove();
             System.out.print(temp + " ");

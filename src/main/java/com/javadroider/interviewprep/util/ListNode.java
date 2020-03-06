@@ -23,7 +23,7 @@ public class ListNode {
         one.next = two;
         two.next = three;
         three.next = four;
-        four.next = five;
+        //four.next = five;
         return one;
     }
 
