@@ -3,10 +3,10 @@ package com.javadroider.interviewprep.leetcode.easy;
 public class BackspaceCompare {
 
     public static void main(String[] args) {
-        System.out.println(new BackspaceCompare().backspaceCompare("a#c", "cd"));
+        System.out.println(new BackspaceCompare().backspaceCompare("ab##", "c#d#"));
     }
 
-    public boolean backspaceCompare(String S, String T) {
+    public boolean backspaceCompareBad(String S, String T) {
         return getTrimmedString(S).equals(getTrimmedString(T));
     }
 
@@ -26,26 +26,30 @@ public class BackspaceCompare {
         return temp;
     }
 
-
-    public boolean backspaceCompare1(String S, String T) {
-        String STyped = buildString(S);
-        String TTyped = buildString(T);
-        return STyped.equals(TTyped);
-    }
-
-
-    private String buildString(String toBuild) {
-        int currentIndex = 0;
-        StringBuilder sb = new StringBuilder();
-        for(int i = 0; i < toBuild.length(); i++) {
-            if(toBuild.charAt(i) == '#') {
-                if(sb.length() >= 1) {
-                    sb.setLength(sb.length() - 1);
-                }
-            } else {
-                sb.append(toBuild.charAt(i));
+    //Input: S = "ab#c", T = "ad#c"
+    public boolean backspaceCompare(String S, String T) {
+        int sPtr = S.length() - 1;
+        int tPtr = T.length() - 1;
+        int countS = 0;
+        int countT = 0;
+        while (sPtr >= 0 || tPtr >= 0) {
+            while (sPtr >= 0 && (countS > 0 || S.charAt(sPtr) == '#')) {
+                if (S.charAt(sPtr) == '#') countS++;
+                else countS--;
+                sPtr--;
             }
+            char left = sPtr < 0 ? '@' : S.charAt(sPtr);
+            while (tPtr >= 0 && (countT > 0 || T.charAt(tPtr) == '#')) {
+                if (T.charAt(tPtr) == '#') countT++;
+                else countT--;
+                tPtr--;
+            }
+            char right = tPtr < 0 ? '@' : T.charAt(tPtr);
+            if (left != right) return false;
+            sPtr--;
+            tPtr--;
         }
-        return sb.toString();
+        return true;
     }
+
 }

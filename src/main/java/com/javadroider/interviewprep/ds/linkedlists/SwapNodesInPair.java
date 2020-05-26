@@ -9,15 +9,14 @@ public class SwapNodesInPair {
     public static void main(String[] args) {
         ListNode list = ListNode.getSampleLinkedList();
         SwapNodesInPair instance = new SwapNodesInPair();
-        ;
-        ListNode.print(instance.swapPairs2(list));
+        ListNode.print(instance.swapPairsIterative2(list));
     }
 
-
+    //not working. Karumanchi
     public void swapPairsRecursive(ListNode head) {
-        if(head == null || head.next == null){
+        if (head == null || head.next == null) {
             return;
-        }else {
+        } else {
             ListNode next = head.next;
             head.next = next.next;
             next.next = head;
@@ -25,20 +24,35 @@ public class SwapNodesInPair {
         }
     }
 
+    //not working. Karumanchi
+    public void swapPairs1(ListNode head) {
+        ListNode temp = null, temp2 = null, current = head;
+        while (current != null && current.next != null) {
+            temp = current.next;
+            temp2 = temp.next;
+            temp.next = current;
+            current.next = temp2;
+            if (current != null) {
+                current = current.next;
+            }
+        }
+    }
+
     //working
     public ListNode swapPairs3(ListNode head) {
 
-        if(head == null || head.next == null){
+        if (head == null || head.next == null) {
             return head;
         }
         ListNode second = head.next;
         ListNode third = second.next;
         second.next = head;
-        head.next = swapPairs(third);
+        head.next = swapPairs3(third);
         return second;
     }
 
-    public ListNode swapPairs2(ListNode head) {
+    //working
+    public ListNode swapPairsIterative1(ListNode head) {
         ListNode dummy = new ListNode(0);
         dummy.next = head;
         ListNode current = dummy;
@@ -53,19 +67,44 @@ public class SwapNodesInPair {
         return dummy.next;
     }
 
-    public void swapPairs1(ListNode head) {
-        ListNode temp = null, temp2 = null, current = head;
-        while(current!= null && current.next!=null){
-            temp = current.next;
-            temp2 = temp.next;
-            temp.next = current;
-            current.next = temp2;
-            if(current!=null){
-                current = current.next;
-            }
+    public ListNode swapPairsIterative2(ListNode head) {
+        if (head == null) {
+            return null;
         }
+        ListNode newhead = new ListNode(-1);//dummy
+        newhead.next = head;
+        ListNode temp = newhead;
+
+        ListNode one = null;
+        ListNode two = null;
+
+        // {dummy->1->2->3->4->null}
+        //explanation for one loop rest are same.
+
+        while (temp.next != null && temp.next.next != null) {
+            // temp points to dummy in the beginning.
+            // one -> 1
+            one = temp.next;
+            //two -> 2
+            two = temp.next.next;
+            // 1-> = 2.next = 3;
+            one.next = two.next;
+            // 2-> = 1
+            two.next = one;
+            //now dummy should point to 2
+            //if the below is not done dummy->1;
+            temp.next = two;
+            // temp was pointing to dummy
+            //temp->1
+            temp = one;
+
+            // now { dummy->2->1->3->4 }
+
+        }
+        return newhead.next;
     }
 
+    //not working
     public ListNode swapPairs(ListNode head) {
 
         if (head == null || head.next == null) {
