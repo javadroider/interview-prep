@@ -3,9 +3,9 @@ package com.javadroider.interviewprep.leetcode.medium;
 public class FriendCircles {
 
     public static void main(String[] args) {
-        int [][] mat = {{1,1},{0,0}};
-        int [][] mat1 = {{1,0,0,1},{0,1,1,0},{0,1,1,1},{1,0,1,1}};
-        System.out.println(new FriendCircles().findCircleNum(mat1));
+        int[][] mat = {{1, 1}, {0, 0}};
+        int[][] mat1 = {{1, 0, 0, 1}, {0, 1, 1, 0}, {0, 1, 1, 1}, {1, 0, 1, 1}};
+        System.out.println(new FriendCircles().findCircleNumUnionFind(mat1));
     }
 
     public void dfs(int[][] M, int[] visited, int i) {
@@ -16,6 +16,7 @@ public class FriendCircles {
             }
         }
     }
+
     public int findCircleNum(int[][] M) {
         int[] visited = new int[M.length];
         int count = 0;
@@ -28,49 +29,57 @@ public class FriendCircles {
         return count;
     }
 
-    public int findCircleNum1(int[][] M) {
+    class UnionFind {
+        private int count = 0;
+        private int[] parent, rank;
 
-        int circles = 0;
-        for(int i = 0; i < M.length; i++){
-            for(int j = 0; j < M[i].length; j++){
-                if(M[i][j] == 1){
-                    circles++;
-                    bfs(M, i, j);
-                }
+        public UnionFind(int n) {
+            count = n;
+            parent = new int[n];
+            rank = new int[n];
+            for (int i = 0; i < n; i++) {
+                parent[i] = i;
             }
         }
 
-        return circles;
-    }
-
-    private void bfs(int grid[][], int row, int col){
-
-        if(row < 0 || row >= grid.length || col < 0 || col >= grid[row].length || grid[row][col] == 0){
-            return;
+        public int find(int p) {
+            while (p != parent[p]) {
+                parent[p] = parent[parent[p]];    // path compression by halving
+                p = parent[p];
+            }
+            return p;
         }
 
-        grid[row][col] = 0;
+        public void union(int p, int q) {
+            int rootP = find(p);
+            int rootQ = find(q);
+            if (rootP == rootQ) return;
+            if (rank[rootQ] > rank[rootP]) {
+                parent[rootP] = rootQ;
+            } else {
+                parent[rootQ] = rootP;
+                if (rank[rootP] == rank[rootQ]) {
+                    rank[rootP]++;
+                }
+            }
+            count--;
+        }
 
-        //left
-        bfs(grid, row, col - 1);
-        //right
-        bfs(grid, row, col + 1);
-        //up
-        bfs(grid, row + 1, col);
-        //down
-        bfs(grid, row - 1, col);
-
+        public int count() {
+            return count;
+        }
     }
 
-    private void bfs1(int [][] M, int i, int j){
-        if(i < 0 || i >= M.length  || j < 0 || j >= M[i].length || M[i][j] == '0'){
-            return;
+    public int findCircleNumUnionFind(int[][] M) {
+        int n = M.length;
+        UnionFind uf = new UnionFind(n);
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < n; j++) {
+                if (M[i][j] == 1 && i != j) {
+                    uf.union(i, j);
+                }
+            }
         }
-        M[i][j] = 0;
-        bfs(M, i + 1, j);
-        bfs(M, i - 1, j);
-        bfs(M, i, j + 1);
-        bfs(M, i, j - 1);
-
+        return uf.count();
     }
 }

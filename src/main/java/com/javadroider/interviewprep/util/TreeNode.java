@@ -5,7 +5,7 @@ public class TreeNode {
     public TreeNode left;
     public TreeNode right;
 
-    TreeNode(int x) {
+    public TreeNode(int x) {
         val = x;
     }
 
@@ -34,5 +34,10 @@ public class TreeNode {
         twelve.left = elven;
         twelve.right = thirteen;
         return ten;
+    }
+
+    @Override
+    public String toString() {
+        return val + "";
     }
 }
