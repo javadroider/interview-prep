@@ -15,6 +15,7 @@
   - [Java Concurrency Utilities](http://tutorials.jenkov.com/java-util-concurrent/index.html)
   - [Concurrency in Java](http://tutorials.jenkov.com/java-concurrency/index.html)
   - Java memory model
+  - [ConcurrentHashMap](https://www.javapatel.com/2016/09/concurrenthashmap-interview-questions.html)
   - [CompletableFuture](https://www.callicoder.com/java-8-completablefuture-tutorial/)
   - [Features introduced in Java 8, 9, 10, 11, 12](https://github.com/javadroider/interview-prep/tree/master/interview/java)
   - Garbage Collectors - [One](https://dzone.com/articles/choosing-the-right-gc) | [Two](https://dzone.com/articles/java-garbage-collection-3) 
