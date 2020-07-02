@@ -4,7 +4,7 @@ Factory design pattern is used when we have a superclass with multiple sub-class
 
 Abstract factory
 
-Builder 
+Builder pattern allows you to create different flavors of an object while avoiding constructor pollution. Useful when there could be several flavors of an object. Or when there are a lot of steps involved in creation of an object.
 
 Singleton ensures that only one object of a particular class is ever created.
 
