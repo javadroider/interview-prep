@@ -1,8 +1,16 @@
 # Creational (FABS P)
 
-Prototype pattern creates object based on an existing object through cloning.
+Factory design pattern is used when we have a superclass with multiple sub-classes and based on input, we need to return one of the sub-class.
+
+Abstract factory
+
+Builder 
 
 Singleton ensures that only one object of a particular class is ever created.
+
+Prototype pattern creates object based on an existing object through cloning.
+
+
 
 # Structural (DAFF CP)
 
