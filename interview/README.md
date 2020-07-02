@@ -21,7 +21,7 @@
   - Garbage Collectors - [One](https://dzone.com/articles/choosing-the-right-gc) | [Two](https://dzone.com/articles/java-garbage-collection-3) | [Video](https://www.youtube.com/watch?v=2AZ0KKeXJSo)
   - [How atomic integer works](https://www.javacodemonk.com/what-is-atomicinteger-class-and-how-it-works-internally-1cda6a56)
   - [Separate Chaining](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/) | [Open Addressing | Linear Probing | Quadratic Probing](https://www.geeksforgeeks.org/hashing-set-3-open-addressing/) | [Cuckoo Hashing](https://www.geeksforgeeks.org/cuckoo-hashing/) | [Double Hashing](https://www.geeksforgeeks.org/double-hashing/)
-  - Generics
+  - [Generics](https://github.com/javadroider/interview-prep/blob/master/interview/java/Generics.md)
   - Annotations
   - [AOT vs JIT compilation in Java](https://www.youtube.com/watch?v=sJVenujWGjs)
   - [Phaser vs CountDownLatch vs CyclicBarrier](https://www.youtube.com/watch?v=J3QZ5gfCtAg)
