@@ -23,6 +23,15 @@ class MissingNumber {
         return xornum ^ minvalue;
     }
 
+    public static int missingNumber(int[] nums) { //xor
+        int res = nums.length;
+        for(int i=0; i<nums.length; i++){
+            res ^= i;
+            res ^= nums[i];
+        }
+        return res;
+    }
+
     static int missingNum2(int array[], int n) {
         int x = array[0];
         int y = 1;
@@ -33,8 +42,8 @@ class MissingNumber {
         for (int i = 2; i <= n + 1; i++) {
             y = y ^ i;
         }
-        System.out.println(x);
-        System.out.println(y);
+        //System.out.println(x);
+        //System.out.println(y);
         return x ^ y;
     }
 
@@ -57,10 +66,10 @@ class MissingNumber {
 
     public static void main(String[] args) {
         //int arr[] = {13, 12, 11, 15};
-        int arr[] = {1, 2, 3, 4, 5, 6, 7, 9};
+        int arr[] = {0, 1, 2, 3, 4, 5, 6, 7, 9};
         int n = arr.length;
         //System.out.println(missingNum1(arr, n));
-        System.out.println(missingNum2(arr, n));
+        System.out.println(missingNumber(arr));
         //System.out.println(missingNum3(arr, n));
 
     }

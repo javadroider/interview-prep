@@ -17,6 +17,14 @@ public class TreeNode {
          7  9  11  13
     */
 
+    public static TreeNode sample2() {
+        TreeNode one = new TreeNode(1);
+        TreeNode two = new TreeNode(2);
+        TreeNode three = new TreeNode(3);
+        one.left = two;
+        one.right = three;
+        return one;
+    }
 
     public static TreeNode sample() {
         TreeNode ten = new TreeNode(10);
