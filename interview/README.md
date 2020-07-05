@@ -8,6 +8,7 @@
 - [CAP theorem](https://github.com/javadroider/interview-prep/blob/master/interview/concepts/CAP%20Theorem.md)
 - Spring
   - [Spring cache](https://howtodoinjava.com/spring-boot2/spring-boot-cache-example/)
+  - [Overview of Spring-Boot Dev Tools](https://www.baeldung.com/spring-boot-devtools)
   - How Springboot works
     - [Spring Boot Architecture](https://youtu.be/3eA8AiCV5oE)
     - [All About Spring Boot Starters](https://youtu.be/oSVwNqwkw-M)
