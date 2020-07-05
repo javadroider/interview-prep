@@ -9,7 +9,12 @@
 - Spring
   - [Spring cache](https://howtodoinjava.com/spring-boot2/spring-boot-cache-example/)
   - How Springboot works
-    - [one](http://www.google.com)
+    - [Spring Boot Architecture](https://youtu.be/3eA8AiCV5oE)
+    - [All About Spring Boot Starters](https://youtu.be/oSVwNqwkw-M)
+    - [How Spring Boot Auto Configuration Works?](https://youtu.be/YdWQFpO9tIA)
+    - [How SpringApplication.run() works?](https://youtu.be/VJtviz7U0Y0)
+    - [Dependency Management](https://youtu.be/9baKEb_FjuQ)
+    - [Custom Failure Analyzer in Spring Boot](https://youtu.be/Vt7zugDNZaU)
 - [Bitwise operations](https://github.com/javadroider/interview-prep/tree/master/src/main/java/com/javadroider/interviewprep/ds/bitwise)
 - [SQL famous queries](https://github.com/javadroider/interview-prep/blob/master/interview/sql/Queries.md)
 - [System Design](https://github.com/javadroider/algorithm-interview/tree/master/grokking_system_design)
