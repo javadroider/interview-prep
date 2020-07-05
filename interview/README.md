@@ -6,7 +6,10 @@
 - [Architectural patterns](https://github.com/javadroider/interview-prep/blob/master/interview/concepts/Architectural%20Patterns.md)
 - [Micro services](https://github.com/javadroider/interview-prep/blob/master/interview/concepts/Microservices.md)
 - [CAP theorem](https://github.com/javadroider/interview-prep/blob/master/interview/concepts/CAP%20Theorem.md)
-- [Spring cache](https://howtodoinjava.com/spring-boot2/spring-boot-cache-example/)
+- Spring
+  - [Spring cache](https://howtodoinjava.com/spring-boot2/spring-boot-cache-example/)
+  - How Springboot works
+    - [one](http://www.google.com)
 - [Bitwise operations](https://github.com/javadroider/interview-prep/tree/master/src/main/java/com/javadroider/interviewprep/ds/bitwise)
 - [SQL famous queries](https://github.com/javadroider/interview-prep/blob/master/interview/sql/Queries.md)
 - [System Design](https://github.com/javadroider/algorithm-interview/tree/master/grokking_system_design)
@@ -22,7 +25,7 @@
   - [How atomic integer works](https://www.javacodemonk.com/what-is-atomicinteger-class-and-how-it-works-internally-1cda6a56)
   - [Separate Chaining](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/) | [Open Addressing | Linear Probing | Quadratic Probing](https://www.geeksforgeeks.org/hashing-set-3-open-addressing/) | [Cuckoo Hashing](https://www.geeksforgeeks.org/cuckoo-hashing/) | [Double Hashing](https://www.geeksforgeeks.org/double-hashing/)
   - [Generics](https://github.com/javadroider/interview-prep/blob/master/interview/java/Generics.md)
-  - Annotations
+  - [Annotations](https://dzone.com/articles/explore-annotations-in-java-8)
   - [AOT vs JIT compilation in Java](https://www.youtube.com/watch?v=sJVenujWGjs)
   - [Phaser vs CountDownLatch vs CyclicBarrier](https://www.youtube.com/watch?v=J3QZ5gfCtAg)
 - [Kafka](https://github.com/javadroider/kafka-tutorial)
