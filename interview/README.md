@@ -9,6 +9,7 @@
 - Spring
   - [Spring cache](https://howtodoinjava.com/spring-boot2/spring-boot-cache-example/)
   - [Overview of Spring-Boot Dev Tools](https://www.baeldung.com/spring-boot-devtools)
+  - [What is the Difference Between JPA and Hibernate?](https://dzone.com/articles/what-is-the-difference-between-hibernate-and-sprin-1#)
   - How Springboot works
     - [Spring Boot Architecture](https://youtu.be/3eA8AiCV5oE)
     - [All About Spring Boot Starters](https://youtu.be/oSVwNqwkw-M)
@@ -27,6 +28,7 @@
   - [CompletableFuture](https://www.callicoder.com/java-8-completablefuture-tutorial/)
   - [Features introduced in Java 8, 9, 10, 11, 12](https://github.com/javadroider/interview-prep/tree/master/interview/java)
   - Garbage Collectors - [One](https://dzone.com/articles/choosing-the-right-gc) | [Two](https://dzone.com/articles/java-garbage-collection-3) | [Video](https://www.youtube.com/watch?v=2AZ0KKeXJSo)
+    - [UseStringDeduplication: Pros and Cons](https://dzone.com/articles/usestringdeduplication)
   - [How atomic integer works](https://www.javacodemonk.com/what-is-atomicinteger-class-and-how-it-works-internally-1cda6a56)
   - [Separate Chaining](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/) | [Open Addressing | Linear Probing | Quadratic Probing](https://www.geeksforgeeks.org/hashing-set-3-open-addressing/) | [Cuckoo Hashing](https://www.geeksforgeeks.org/cuckoo-hashing/) | [Double Hashing](https://www.geeksforgeeks.org/double-hashing/)
   - [Generics](https://github.com/javadroider/interview-prep/blob/master/interview/java/Generics.md)
