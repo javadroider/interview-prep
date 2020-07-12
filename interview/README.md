@@ -1,17 +1,21 @@
 
 # Interview preparation topics
 
-- Design patterns [One](https://github.com/javadroider/design-patterns-for-humans) | [Two](https://github.com/javadroider/interview-prep/tree/master/src/main/java/com/javadroider/interviewprep/designpatterns)
+- Design patterns 
+  - [Design patterns for humans](https://github.com/javadroider/design-patterns-for-humans) 
+  - [My classes](https://github.com/javadroider/interview-prep/tree/master/src/main/java/com/javadroider/interviewprep/designpatterns)
 - [Design principles](https://github.com/javadroider/interview-prep/blob/master/interview/concepts/Design%20Principles.md)
 - [Architectural patterns](https://github.com/javadroider/interview-prep/blob/master/interview/concepts/Architectural%20Patterns.md)
+  - [FAAS and event-driven architecture](https://www.youtube.com/watch?v=h-vD_hycQjk)
 - [Micro services](https://github.com/javadroider/interview-prep/blob/master/interview/concepts/Microservices.md)
   - [Distributed tracing](https://dzone.com/articles/tracing-in-microservices-with-spring-cloud-sleuth)
   - [Service discovery using netflix eureka](https://dzone.com/articles/netflix-eureka-discovery-microservice)
   - [Circuit Breaker Using Netflix Hystrix](https://docs.google.com/presentation/d/1hLitnkkutf-aL3DAnYCsmUwattoSe_ZBlSzVUEXfNw8/edit?usp=sharing)
   - [Distributed transactions](https://developers.redhat.com/blog/2018/10/01/patterns-for-distributed-transactions-within-a-microservices-architecture/)
   - [Blue green deployment](https://dzone.com/articles/blue-green-deployment-for-cloud-native-application)
-  - [Bulk head pattern]()
-  - [Strangler pattern]()
+  - [Bulk head pattern](https://www.youtube.com/watch?v=R2FT5edyKOg)
+  - [Strangler pattern](https://www.youtube.com/watch?v=8h3moilCpQ4)
+  - [Service mesh](https://www.youtube.com/watch?v=QiXK0B9FhO0&t=10s)
 - [CAP theorem](https://github.com/javadroider/interview-prep/blob/master/interview/concepts/CAP%20Theorem.md)
 - Spring
   - [Spring cache](https://howtodoinjava.com/spring-boot2/spring-boot-cache-example/)
@@ -25,6 +29,7 @@
     - [How SpringApplication.run() works?](https://youtu.be/VJtviz7U0Y0)
     - [Dependency Management](https://youtu.be/9baKEb_FjuQ)
     - [Custom Failure Analyzer in Spring Boot](https://youtu.be/Vt7zugDNZaU)
+  - [Spring cloud config server](https://www.youtube.com/watch?v=b2ih5RCuxTM)
 - [Bitwise operations](https://github.com/javadroider/interview-prep/tree/master/src/main/java/com/javadroider/interviewprep/ds/bitwise)
 - [SQL famous queries](https://github.com/javadroider/interview-prep/blob/master/interview/sql/Queries.md)
 - [System Design](https://github.com/javadroider/algorithm-interview/tree/master/grokking_system_design)
@@ -35,8 +40,9 @@
   - [ConcurrentHashMap](https://www.javapatel.com/2016/09/concurrenthashmap-interview-questions.html)
   - [CompletableFuture](https://www.callicoder.com/java-8-completablefuture-tutorial/)
   - [Features introduced in Java 8, 9, 10, 11, 12](https://github.com/javadroider/interview-prep/tree/master/interview/java)
-  - Garbage Collectors - [One](https://dzone.com/articles/choosing-the-right-gc) | [Two](https://dzone.com/articles/java-garbage-collection-3) | [Video](https://www.youtube.com/watch?v=2AZ0KKeXJSo)
+  - Garbage Collectors - [One](https://dzone.com/articles/choosing-the-right-gc) | [Two](https://dzone.com/articles/java-garbage-collection-3)
     - [UseStringDeduplication: Pros and Cons](https://dzone.com/articles/usestringdeduplication)
+    - [Choose the best garbage collector - video](https://www.youtube.com/watch?v=2AZ0KKeXJSo)
   - [How atomic integer works](https://www.javacodemonk.com/what-is-atomicinteger-class-and-how-it-works-internally-1cda6a56)
   - [Separate Chaining](https://www.geeksforgeeks.org/hashing-set-2-separate-chaining/) | [Open Addressing | Linear Probing | Quadratic Probing](https://www.geeksforgeeks.org/hashing-set-3-open-addressing/) | [Cuckoo Hashing](https://www.geeksforgeeks.org/cuckoo-hashing/) | [Double Hashing](https://www.geeksforgeeks.org/double-hashing/)
   - [Generics](https://github.com/javadroider/interview-prep/blob/master/interview/java/Generics.md)
@@ -64,6 +70,8 @@
 - [JMH](http://tutorials.jenkov.com/java-performance/jmh.html)
 - [Brave](https://github.com/openzipkin/brave)
 - [Varnish](https://varnish-cache.org/intro/)
+- [Oracle golden gate](https://www.youtube.com/watch?v=9zZksY8IzgI)
+- [Java fibres](https://www.youtube.com/watch?v=VwBnPZQl5m8&t=77s)
 
 
 Data Structures and Algorithms
