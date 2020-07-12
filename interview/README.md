@@ -3,7 +3,7 @@
 
 - Design patterns 
   - [Design patterns for humans](https://github.com/javadroider/design-patterns-for-humans) 
-  - [My classes](https://github.com/javadroider/interview-prep/tree/master/src/main/java/com/javadroider/interviewprep/designpatterns)
+  - [My examples](https://github.com/javadroider/interview-prep/tree/master/src/main/java/com/javadroider/interviewprep/designpatterns)
 - [Design principles](https://github.com/javadroider/interview-prep/blob/master/interview/concepts/Design%20Principles.md)
 - [Architectural patterns](https://github.com/javadroider/interview-prep/blob/master/interview/concepts/Architectural%20Patterns.md)
   - [FAAS and event-driven architecture](https://www.youtube.com/watch?v=h-vD_hycQjk)
