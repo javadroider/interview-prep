@@ -5,6 +5,13 @@
 - [Design principles](https://github.com/javadroider/interview-prep/blob/master/interview/concepts/Design%20Principles.md)
 - [Architectural patterns](https://github.com/javadroider/interview-prep/blob/master/interview/concepts/Architectural%20Patterns.md)
 - [Micro services](https://github.com/javadroider/interview-prep/blob/master/interview/concepts/Microservices.md)
+  - [Distributed tracing](https://dzone.com/articles/tracing-in-microservices-with-spring-cloud-sleuth)
+  - [Service discovery using netflix eureka](https://dzone.com/articles/netflix-eureka-discovery-microservice)
+  - [Circuit Breaker Using Netflix Hystrix](https://docs.google.com/presentation/d/1hLitnkkutf-aL3DAnYCsmUwattoSe_ZBlSzVUEXfNw8/edit?usp=sharing)
+  - [Distributed transactions](https://developers.redhat.com/blog/2018/10/01/patterns-for-distributed-transactions-within-a-microservices-architecture/)
+  - [Blue green deployment](https://dzone.com/articles/blue-green-deployment-for-cloud-native-application)
+  - [Bulk head pattern]()
+  - [Strangler pattern]()
 - [CAP theorem](https://github.com/javadroider/interview-prep/blob/master/interview/concepts/CAP%20Theorem.md)
 - Spring
   - [Spring cache](https://howtodoinjava.com/spring-boot2/spring-boot-cache-example/)
