@@ -11,4 +11,12 @@ Command to view Git username or email address
 
 [git config --list](https://alvinalexander.com/git/git-show-change-username-email-address)
 
+```
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin https://github.com/javadroider/Khazana.git
+git push -u origin master
+```
+
 
