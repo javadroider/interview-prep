@@ -58,3 +58,4 @@ tmp/
 *~.nib
 local.properties
 .loadpath
+*.ini

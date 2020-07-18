@@ -1,7 +1,6 @@
 package com.javadroider.interviewprep.leetcode.medium;
 
 import com.javadroider.interviewprep.util.TreeNode;
-import sun.reflect.generics.tree.Tree;
 
 import java.util.HashMap;
 import java.util.Map;
