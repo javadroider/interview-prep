@@ -1,6 +1,3 @@
-/**
- * 
- */
 package com.javadroider.interviewprep.dp;
 
 public class MaximumSumSubArray {

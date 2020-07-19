@@ -23,7 +23,7 @@ public class MergeKSortedLists {
     public ListNode mergeKLists(List<ListNode> lists) {
         ListNode dummy = new ListNode(0);
         ListNode head = dummy;
-        PriorityQueue<ListNode> pq = new PriorityQueue<>(lists.size(), new Comparator<ListNode>() {
+        PriorityQueue<ListNode> pq1 = new PriorityQueue<>(lists.size(), new Comparator<ListNode>() {
             @Override
             public int compare(ListNode o1, ListNode o2) {
                 if (o1.val < o2.val) {
@@ -35,15 +35,17 @@ public class MergeKSortedLists {
             }
         });
 
+        PriorityQueue<ListNode> pq = new PriorityQueue<>(lists.size(), (o1,o2) -> Integer.compare(o1.val, o2.val));
+
         for (ListNode list : lists) {
-            if(list!=null) {
+            if (list != null) {
                 pq.add(list);
             }
         }
-        while(!pq.isEmpty()){
+        while (!pq.isEmpty()) {
             ListNode node = pq.poll();
             head.next = node;
-            if(node.next!=null){
+            if (node.next != null) {
                 pq.add(node.next);
             }
             head = head.next;
