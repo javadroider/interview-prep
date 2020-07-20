@@ -1,7 +1,6 @@
 package com.javadroider.interviewprep;
 
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 /*
 
@@ -38,12 +37,12 @@ class Solution {
                 "text as demo input."
         );
         /**
-        simple, the, total : 2
-        line: 1, occurrences: 2
+         simple, the, total : 2
+         line: 1, occurrences: 2
 
-        the , total : 1
-        line: 2, occurrences: 3
-        **/
+         the , total : 1
+         line: 2, occurrences: 3
+         **/
         final List<String> keywords = List.of(
                 "simple",
                 "the",
@@ -53,17 +52,24 @@ class Solution {
     }
 
     static void findOccurrences(List<String> lines, List<String> keywords) {
+        int occurrences = 0;
+        for (int i = 0; i < lines.size(); i++) {
+            String[] tokens = lines.get(i).split("\\s");
+            Set<String> keywordsInLine = new HashSet<>();
 
-        int lineCount;
-        for(String line : lines){
-            String tokens[] = line.split("\\s");
-            for(String token: tokens){
-
+            for (String token : tokens) {
+                if (keywords.contains(token)) {
+                    keywordsInLine.add(token);
+                    occurrences++;
+                }
             }
+            System.out.println(keywordsInLine + ", Total: " + keywordsInLine.size());
+            System.out.println("Line: " + (i + 1) + ", Occurrences: " + occurrences);
         }
+
     }
 
-    private static class WordVo{
+    private static class WordVo {
         public int val;
         public Map<String, Integer> map;
     }
