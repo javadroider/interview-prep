@@ -1,3 +1,6 @@
+[tech-interview-handbook/behavioral-questions](https://yangshun.github.io/tech-interview-handbook/behavioral-questions)
+
+
 ## Behavioural Questions
  - Tell me a time when you had a conflict in the team.
  - Tell me a time when you did something that had a big impact.
