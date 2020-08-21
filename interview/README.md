@@ -36,10 +36,10 @@
 - [Design Questions](https://github.com/javadroider/interview-prep/blob/master/interview/questions/System-Design-Interview-Questions.md)
 - SSL Basics
     - [How SSL Works](https://github.com/javadroider/interview-prep/blob/master/interview/ssl-basics/How%20SSL%20Works.md)
-    - [SSL Certificate](ssl-basics/SSL Certificate.md)
-    - [SSl certificate formats]()
-    - [Certificate Signing Request]()
-    - [Get an SSL Certificate]()
+    - [SSL Certificate](https://github.com/javadroider/interview-prep/blob/master/interview/ssl-basics/SSL%20Certificate.md)
+    - [SSl certificate formats](https://github.com/javadroider/interview-prep/blob/master/interview/ssl-basics/SSl%20certificate%20formats.md)
+    - [Certificate Signing Request](https://github.com/javadroider/interview-prep/blob/master/interview/ssl-basics/Certificate%20Signing%20Request.md)
+    - [Get an SSL Certificate](https://github.com/javadroider/interview-prep/blob/master/interview/ssl-basics/Get%20an%20SSL%20Certificate.md)
 - Database
   - [Queries](https://github.com/javadroider/interview-prep/blob/master/interview/sql/Queries.md)
   - [Optimization Techniques](https://github.com/javadroider/interview-prep/blob/master/interview/sql/Optimization%20Techniques.md)
