@@ -1,6 +1,3 @@
-/**
- *
- */
 package com.javadroider.interviewprep.designpatterns.creational.singleton;
 
 import java.io.Serializable;
