@@ -30,13 +30,7 @@ As you can see, in the General tab, the certificate displays Issued to, Issued b
 
 X.509 uses a formal language called[ Abstract Syntax Notation One (ASN.1)](https://en.wikipedia.org/wiki/Abstract_Syntax_Notation_One) to express the certificate's data structure.
 
-
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](images/image4.png "image_tooltip")
-<span style="text-decoration:underline;"> </span>SSL Certificate
+![alt_text](images/image9.png "image_tooltip")
 
 The SSL certificate in X.509 format includes the following information:
 
