@@ -36,7 +36,7 @@
 - [Design Questions](https://github.com/javadroider/interview-prep/blob/master/interview/questions/System-Design-Interview-Questions.md)
 - SSL Basics
     - [How SSL Works](https://github.com/javadroider/interview-prep/blob/master/interview/ssl-basics/How%20SSL%20Works.md)
-    - [SSL Certificate]()
+    - [SSL Certificate](ssl-basics/SSL Certificate.md)
     - [SSl certificate formats]()
     - [Certificate Signing Request]()
     - [Get an SSL Certificate]()
