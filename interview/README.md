@@ -35,7 +35,7 @@
 - [System Design](https://github.com/javadroider/algorithm-interview/tree/master/grokking_system_design)
 - [Design Questions](https://github.com/javadroider/interview-prep/blob/master/interview/questions/System-Design-Interview-Questions.md)
 - SSL Basics
-    - [How SSL Works](ssl-basics/How SSL Works.md)
+    - [How SSL Works](https://github.com/javadroider/interview-prep/blob/master/interview/ssl-basics/How%20SSL%20Works.md)
     - [SSL Certificate]()
     - [SSl certificate formats]()
     - [Certificate Signing Request]()
