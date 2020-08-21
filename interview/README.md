@@ -34,6 +34,12 @@
 - [SQL famous queries](https://github.com/javadroider/interview-prep/blob/master/interview/sql/Queries.md)
 - [System Design](https://github.com/javadroider/algorithm-interview/tree/master/grokking_system_design)
 - [Design Questions](https://github.com/javadroider/interview-prep/blob/master/interview/questions/System-Design-Interview-Questions.md)
+- SSL Basics
+    - [How SSL Works](ssl-basics/How SSL Works.md)
+    - [SSL Certificate]()
+    - [SSl certificate formats]()
+    - [Certificate Signing Request]()
+    - [Get an SSL Certificate]()
 - Database
   - [Queries](https://github.com/javadroider/interview-prep/blob/master/interview/sql/Queries.md)
   - [Optimization Techniques](https://github.com/javadroider/interview-prep/blob/master/interview/sql/Optimization%20Techniques.md)
