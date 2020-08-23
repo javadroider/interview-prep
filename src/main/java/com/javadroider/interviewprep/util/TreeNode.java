@@ -44,6 +44,20 @@ public class TreeNode {
         return ten;
     }
 
+    public static TreeNode sample1() {
+        TreeNode minusTen = new TreeNode(-10);
+        TreeNode nine = new TreeNode(9);
+        TreeNode twenty = new TreeNode(20);
+        TreeNode fifteen = new TreeNode(15);
+        TreeNode seven = new TreeNode(7);
+
+        minusTen.left = nine;
+        minusTen.right = twenty;
+        twenty.left = fifteen;
+        twenty.right = seven;
+        return minusTen;
+    }
+
     @Override
     public String toString() {
         return val + "";
