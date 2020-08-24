@@ -1,5 +1,7 @@
 package com.javadroider.interviewprep.util;
 
+import jdk.nashorn.api.tree.Tree;
+
 public class TreeNode {
     public int val;
     public TreeNode left;
@@ -23,6 +25,32 @@ public class TreeNode {
         TreeNode three = new TreeNode(3);
         one.left = two;
         one.right = three;
+        return one;
+    }
+
+    /*
+               1
+            /    \
+           2      3
+          / \   /  \
+         4  5  6   7
+    */
+
+    public static TreeNode sample4() {
+        TreeNode one = new TreeNode(1);
+        TreeNode two = new TreeNode(2);
+        TreeNode three = new TreeNode(3);
+        TreeNode four = new TreeNode(4);
+        TreeNode five = new TreeNode(5);
+        TreeNode six = new TreeNode(6);
+        TreeNode seven = new TreeNode(7);
+
+        one.left = two;
+        one.right = three;
+        two.left = four;
+        two.right = five;
+        three.left = six;
+        three.right = seven;
         return one;
     }
 

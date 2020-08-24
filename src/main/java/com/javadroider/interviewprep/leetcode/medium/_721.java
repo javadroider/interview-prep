@@ -58,7 +58,7 @@ public class _721 {
 /* Now that we have our parents array ready where each index is either it's own parent of has some other account's index,
 we need to merge all accounts who's parents are the same into one account.
 The users map will contain index to TreeSet of email mapping.
-Note that treeset sorts the elements inside it in natural order, therefore no need to worry about sorting when using this data structure.
+Note that treeset sorts the elements inside it in natural level, therefore no need to worry about sorting when using this data structure.
 For adding an element, it takes O(logn) operation. For n emails, it would take O(nlogn) and O(n) space.
 */
         Map<Integer, TreeSet<String>> users = new HashMap<>();
