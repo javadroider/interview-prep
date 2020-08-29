@@ -2,13 +2,29 @@ package com.javadroider.interviewprep.leetcode.easy;
 
 import java.util.*;
 
-public class ValidParanthesis {
+public class _20 {
 
     public static void main(String[] args) {
-        System.out.println(isValid("{{("));
+        System.out.println(new _20().isValid("{{("));
     }
 
-    private static boolean isValid(String s) {
+    public boolean isValid1(String s) {
+        Stack<Character> stack = new Stack<>();
+        for(char c : s.toCharArray()){
+            if(c == '('){
+                stack.push(')');
+            }else if(c == '['){
+                stack.push(']');
+            }else if(c == '{'){
+                stack.push('}');
+            }else if(stack.empty() || stack.pop()!=c){
+                return false;
+            }
+        }
+        return stack.empty();
+    }
+
+    private boolean isValid(String s) {
         Map<String,String> map1 = new HashMap<>();
         map1.put("(",")");
         map1.put("{","}");
