@@ -15,8 +15,50 @@ public class _721 {
         System.out.println(instance.accountsMerge(accounts));
     }
 
-
+    //https://leetcode.com/problems/accounts-merge/solution/
     public List<List<String>> accountsMerge(List<List<String>> accounts) {
+        Map<String, String> emailToName = new HashMap();
+        Map<String, ArrayList<String>> graph = new HashMap();
+        for (List<String> account : accounts) {
+            String name = "";
+            for (String email : account) {
+                if ("".equalsIgnoreCase(name)) {
+                    name = email;
+                    continue;
+                }
+                graph.computeIfAbsent(email, x -> new ArrayList<String>()).add(account.get(1));
+                graph.computeIfAbsent(account.get(1), x -> new ArrayList<String>()).add(email);
+                emailToName.put(email, name);
+            }
+        }
+
+        Set<String> seen = new HashSet();
+        List<List<String>> ans = new ArrayList();
+        for (String email : graph.keySet()) {
+            if (!seen.contains(email)) {
+                seen.add(email);
+                Stack<String> stack = new Stack();
+                stack.push(email);
+                List<String> component = new ArrayList();
+                while (!stack.empty()) {
+                    String node = stack.pop();
+                    component.add(node);
+                    for (String nei : graph.get(node)) {
+                        if (!seen.contains(nei)) {
+                            seen.add(nei);
+                            stack.push(nei);
+                        }
+                    }
+                }
+                Collections.sort(component);
+                component.add(0, emailToName.get(email));
+                ans.add(component);
+            }
+        }
+        return ans;
+    }
+
+    public List<List<String>> accountsMerge1(List<List<String>> accounts) {
         // array is initialized with the total size of accounts and each is given a unique id.
         // When the index of an array is equal to the value inside it, it means it is its own parent.
         // if it is different, it means that it has some other parent.
@@ -49,7 +91,7 @@ public class _721 {
                         parents[p2] = p1;
                     }
                 } else {
-                        // Otherwise just track it
+                    // Otherwise just track it
                     owners.put(email, i);
                 }
             }
