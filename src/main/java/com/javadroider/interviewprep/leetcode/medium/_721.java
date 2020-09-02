@@ -8,57 +8,81 @@ public class _721 {
     public static void main(String[] args) {
         _721 instance = new _721();
         List<List<String>> accounts = new ArrayList<>();
-        accounts.add(Arrays.asList("John", "johnsmith@mail.com", "john00@mail.com"));
-        accounts.add(Arrays.asList("John", "johnnybravo@mail.com"));
-        accounts.add(Arrays.asList("John", "johnsmith@mail.com", "john_newyork@mail.com"));
-        accounts.add(Arrays.asList("Mary", "mary@mail.com"));
+//        accounts.add(Arrays.asList("John", "johnsmith@mail.com", "john00@mail.com"));
+//        accounts.add(Arrays.asList("John", "johnnybravo@mail.com"));
+//        accounts.add(Arrays.asList("John", "johnsmith@mail.com", "john_newyork@mail.com"));
+//        accounts.add(Arrays.asList("Mary", "mary@mail.com"));
+
+//        accounts.add(Arrays.asList("David","David0@m.co","David4@m.co","David3@m.co"));
+//        accounts.add(Arrays.asList("David","David5@m.co","David5@m.co","David0@m.co"));
+//        accounts.add(Arrays.asList("David","David1@m.co","David4@m.co","David0@m.co"));
+//        accounts.add(Arrays.asList("David","David0@m.co","David1@m.co","David3@m.co"));
+//        accounts.add(Arrays.asList("David","David4@m.co","David1@m.co","David3@m.co"));
+        //Expected: [["David","David0@m.co","David1@m.co","David3@m.co","David4@m.co","David5@m.co"]]
+
+//        accounts.add(Arrays.asList("David","David0@m.co","David1@m.co"));
+//        accounts.add(Arrays.asList("David","David3@m.co","David4@m.co"));
+//        accounts.add(Arrays.asList("David","David4@m.co","David5@m.co"));
+//        accounts.add(Arrays.asList("David","David2@m.co","David3@m.co"));
+//        accounts.add(Arrays.asList("David","David1@m.co","David2@m.co"));
+        //Expect: [["David","David0@m.co","David1@m.co","David2@m.co","David3@m.co","David4@m.co","David5@m.co"]]
+
+        accounts.add(Arrays.asList("David","David1@m.co","David2@m.co"));
+        accounts.add(Arrays.asList("David","David2@m.co","David3@m.co"));
+        accounts.add(Arrays.asList("David","David3@m.co","David4@m.co"));
+        accounts.add(Arrays.asList("David","David4@m.co","David5@m.co"));
+
         System.out.println(instance.accountsMerge(accounts));
     }
 
-    //https://leetcode.com/problems/accounts-merge/solution/
-    public List<List<String>> accountsMerge(List<List<String>> accounts) {
-        Map<String, String> emailToName = new HashMap();
-        Map<String, ArrayList<String>> graph = new HashMap();
+    public List<List<String>> accountsMergeInEfficient(List<List<String>> accounts) {
+        List<List<String>> ans = new ArrayList<>();
+        Map<String, Set<String>> map = new HashMap<>();
+
         for (List<String> account : accounts) {
-            String name = "";
-            for (String email : account) {
-                if ("".equalsIgnoreCase(name)) {
-                    name = email;
-                    continue;
+            String name = account.get(0);
+            Set<String> set = new HashSet<>();
+            for (int i = 1; i < account.size(); i++) {
+                set.add(account.get(i));
+            }
+            if (map.size() > 0) {
+                boolean flag = false;
+                for (Map.Entry<String, Set<String>> entry : map.entrySet()) {
+                    Set<String> tempSet = entry.getValue();
+                    for (String email : set) {
+                        if (tempSet.contains(email)) {
+                            map.get(name).addAll(set);
+                            flag = true;
+                            break;
+                        }
+                    }
+                    if(flag){
+                        break;
+                    }
                 }
-                graph.computeIfAbsent(email, x -> new ArrayList<String>()).add(account.get(1));
-                graph.computeIfAbsent(account.get(1), x -> new ArrayList<String>()).add(email);
-                emailToName.put(email, name);
+                if (!flag) {
+                    if (map.containsKey(name)) {
+                        int counter = 1;
+                        String tempName = name + "_" + counter;
+                        while (map.containsKey(tempName)) {
+                            counter++;
+                            tempName = name + "_" + counter;
+                        }
+                        name = tempName;
+                    }
+                    map.put(name, set);
+                }
+            } else {
+                map.put(name, set);
             }
         }
 
-        Set<String> seen = new HashSet();
-        List<List<String>> ans = new ArrayList();
-        for (String email : graph.keySet()) {
-            if (!seen.contains(email)) {
-                seen.add(email);
-                Stack<String> stack = new Stack();
-                stack.push(email);
-                List<String> component = new ArrayList();
-                while (!stack.empty()) {
-                    String node = stack.pop();
-                    component.add(node);
-                    for (String nei : graph.get(node)) {
-                        if (!seen.contains(nei)) {
-                            seen.add(nei);
-                            stack.push(nei);
-                        }
-                    }
-                }
-                Collections.sort(component);
-                component.add(0, emailToName.get(email));
-                ans.add(component);
-            }
-        }
         return ans;
     }
 
-    public List<List<String>> accountsMerge1(List<List<String>> accounts) {
+    //https://www.techiedelight.com/disjoint-set-data-structure-union-find-algorithm/
+    //https://leetcode.com/problems/accounts-merge/discuss/140978/Easy-to-Understand-Union-Find-in-Java-95
+    public List<List<String>> accountsMerge(List<List<String>> accounts) {
         // array is initialized with the total size of accounts and each is given a unique id.
         // When the index of an array is equal to the value inside it, it means it is its own parent.
         // if it is different, it means that it has some other parent.
@@ -80,10 +104,10 @@ public class _721 {
                 if (owners.containsKey(email)) {
                     // Find that account's index
                     int person = owners.get(email);
-                    // Find the parent of that current account
-                    int p1 = findParent(parents, i);
                     // Find the parent of the account where our email in the map had been found
-                    int p2 = findParent(parents, person);
+                    int p1 = findParent(parents, person);
+                    // Find the parent of that current account
+                    int p2 = findParent(parents, i);
                     // If they weren't already connected, then connect them. For connecting them,
                     // we would reassign the index of the account of where we found our email
                     // to the current account we are processing.
@@ -116,7 +140,7 @@ For adding an element, it takes O(logn) operation. For n emails, it would take O
         }
 
 // We not have a map with index and a treemap containing all the emails. Now we are Building final result.
-        List<List<String>> res = new ArrayList<List<String>>();
+        List<List<String>> res = new ArrayList<>();
         for (Integer idx : users.keySet()) {
 // idx is the account id, get that particular account's name. We need to append it to our arraylist before returning it.
             String name = accounts.get(idx).get(0);
@@ -133,6 +157,6 @@ For adding an element, it takes O(logn) operation. For n emails, it would take O
             parents[idx] = parents[parents[idx]];
             idx = parents[idx];
         }
-        return idx;
+        return parents[idx];
     }
 }
