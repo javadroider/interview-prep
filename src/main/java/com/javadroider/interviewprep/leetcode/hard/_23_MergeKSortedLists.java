@@ -1,13 +1,12 @@
-package com.javadroider.interviewprep.ds.linkedlists;
+package com.javadroider.interviewprep.leetcode.hard;
 
 import com.javadroider.interviewprep.util.ListNode;
 
 import java.util.ArrayList;
-import java.util.Comparator;
 import java.util.List;
 import java.util.PriorityQueue;
 
-public class MergeKSortedLists {
+public class _23_MergeKSortedLists {
 
     public static void main(String[] args) {
         ListNode l1 = ListNode.getSampleLinkedList();
@@ -17,26 +16,13 @@ public class MergeKSortedLists {
         list.add(l1);
         list.add(l2);
         list.add(l3);
-        ListNode.print(new MergeKSortedLists().mergeKLists(list));
+        ListNode.print(new _23_MergeKSortedLists().mergeKLists(list));
     }
 
     public ListNode mergeKLists(List<ListNode> lists) {
         ListNode dummy = new ListNode(0);
         ListNode head = dummy;
-        PriorityQueue<ListNode> pq1 = new PriorityQueue<>(lists.size(), new Comparator<ListNode>() {
-            @Override
-            public int compare(ListNode o1, ListNode o2) {
-                if (o1.val < o2.val) {
-                    return -1;
-                } else if (o1.val > o2.val) {
-                    return 1;
-                }
-                return 0;
-            }
-        });
-
         PriorityQueue<ListNode> pq = new PriorityQueue<>(lists.size(), (o1,o2) -> Integer.compare(o1.val, o2.val));
-
         for (ListNode list : lists) {
             if (list != null) {
                 pq.add(list);
@@ -48,6 +34,39 @@ public class MergeKSortedLists {
             if (node.next != null) {
                 pq.add(node.next);
             }
+            head = head.next;
+        }
+
+        return dummy.next;
+    }
+
+    public ListNode mergeKLists(ListNode[] lists) {
+        if(lists == null){
+            return null;
+        }
+
+        ListNode dummy = new ListNode(0);
+        ListNode head = dummy;
+        while(true){
+            boolean isBreak = true;
+            int min = Integer.MAX_VALUE;
+            int index = -1;
+            for(int i = 0; i < lists.length; i++){
+                if(lists[i] != null){
+                    if(lists[i].val <= min){
+                        min = lists[i].val;
+                        index = i;
+                    }
+                    isBreak = false;
+                }
+            }
+
+            if(isBreak){
+                break;
+            }
+
+            head.next = lists[index];
+            lists[index] = lists[index].next;
             head = head.next;
         }
 

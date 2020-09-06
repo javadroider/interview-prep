@@ -1,14 +1,12 @@
-package com.javadroider.interviewprep.ds.linkedlists;
+package com.javadroider.interviewprep.leetcode.medium;
 
 import com.javadroider.interviewprep.util.ListNode;
 
-import java.util.List;
-
-public class SwapNodesInPair {
+public class _24_SwapNodesInPair {
 
     public static void main(String[] args) {
         ListNode list = ListNode.getSampleLinkedList();
-        SwapNodesInPair instance = new SwapNodesInPair();
+        _24_SwapNodesInPair instance = new _24_SwapNodesInPair();
         ListNode.print(instance.swapPairsIterative2(list));
     }
 

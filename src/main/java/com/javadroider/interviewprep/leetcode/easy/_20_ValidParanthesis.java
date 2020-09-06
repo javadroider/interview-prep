@@ -2,10 +2,10 @@ package com.javadroider.interviewprep.leetcode.easy;
 
 import java.util.*;
 
-public class _20 {
+public class _20_ValidParanthesis {
 
     public static void main(String[] args) {
-        System.out.println(new _20().isValid("{{("));
+        System.out.println(new _20_ValidParanthesis().isValid1("()"));
     }
 
     public boolean isValid1(String s) {

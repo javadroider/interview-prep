@@ -3,7 +3,7 @@ package com.javadroider.interviewprep.leetcode.medium;
 import java.util.ArrayList;
 import java.util.List;
 
-public class _22 {
+public class _22_GenerateParanthesis {
 
     public static void main(String[] args) {
         System.out.println(generateParenthesis(3));

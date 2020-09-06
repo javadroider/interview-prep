@@ -2,7 +2,7 @@ package com.javadroider.interviewprep.leetcode.medium;
 
 import java.util.Arrays;
 
-public class _16 {
+public class _0016_3SumClosest {
 
     public static void main(String[] args) {
         //int[] nums = {-1, 2, 1, -4};

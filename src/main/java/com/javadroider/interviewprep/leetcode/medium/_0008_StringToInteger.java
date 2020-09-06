@@ -1,6 +1,6 @@
 package com.javadroider.interviewprep.leetcode.medium;
 
-public class _8 {
+public class _0008_StringToInteger {
 
     public static void main(String[] args) {
         System.out.println(myAtoi("2147483647"));
