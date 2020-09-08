@@ -2,11 +2,11 @@ package com.javadroider.interviewprep.leetcode.medium;
 
 import com.javadroider.interviewprep.util.ListNode;
 
-public class _24_SwapNodesInPair {
+public class _0024_SwapNodesInPair {
 
     public static void main(String[] args) {
         ListNode list = ListNode.getSampleLinkedList();
-        _24_SwapNodesInPair instance = new _24_SwapNodesInPair();
+        _0024_SwapNodesInPair instance = new _0024_SwapNodesInPair();
         ListNode.print(instance.swapPairsIterative2(list));
     }
 

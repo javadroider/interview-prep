@@ -2,7 +2,7 @@ package com.javadroider.interviewprep.leetcode.easy;
 
 import com.javadroider.interviewprep.util.ListNode;
 
-public class _21_MergeTwoSortedLinkedLists {
+public class _0021_MergeTwoSortedLinkedLists {
 
     public ListNode mergeTwoLists(ListNode l1, ListNode l2) {
         if (l1 == null && l2 == null) {

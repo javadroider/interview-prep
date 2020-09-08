@@ -1,6 +1,6 @@
 package com.javadroider.interviewprep.leetcode.easy;
 
-public class _28 {
+public class _0028_ImplementStrStr {
 
     public static void main(String[] args) {
         //System.out.println(strStr("hello", "ll"));

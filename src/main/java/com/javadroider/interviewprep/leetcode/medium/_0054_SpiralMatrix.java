@@ -3,11 +3,11 @@ package com.javadroider.interviewprep.leetcode.medium;
 import java.util.ArrayList;
 import java.util.List;
 
-public class SpiralMatrix {
+public class _0054_SpiralMatrix {
 
     public static void main(String[] args) {
-        System.out.println(new SpiralMatrix().spiralOrder(new int [][]{{7},{9},{6}}));
-        //System.out.println(new SpiralMatrix().spiralOrder(new int[][]{{7, 9, 6}}));
+        System.out.println(new _0054_SpiralMatrix().spiralOrder(new int [][]{{7},{9},{6}}));
+        //System.out.println(new _0054_SpiralMatrix().spiralOrder(new int[][]{{7, 9, 6}}));
     }
 
     public List<Integer> spiralOrder(int[][] matrix) {

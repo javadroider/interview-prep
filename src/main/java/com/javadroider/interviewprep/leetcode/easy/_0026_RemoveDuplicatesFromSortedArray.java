@@ -1,10 +1,10 @@
 package com.javadroider.interviewprep.leetcode.easy;
 
-public class _26_RemoveDuplicatesFromSortedArray {
+public class _0026_RemoveDuplicatesFromSortedArray {
 
     public static void main(String[] args) {
         int[] nums = {1, 2, 3};
-        System.out.println(new _26_RemoveDuplicatesFromSortedArray().removeDuplicates(nums));
+        System.out.println(new _0026_RemoveDuplicatesFromSortedArray().removeDuplicates(nums));
     }
 
     public int removeDuplicates(int[] nums) {

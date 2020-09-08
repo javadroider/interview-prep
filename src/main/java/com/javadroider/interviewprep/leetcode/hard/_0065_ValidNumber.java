@@ -1,6 +1,6 @@
 package com.javadroider.interviewprep.leetcode.hard;
 
-public class _65 {
+public class _0065_ValidNumber {
 
     /**
      * "0" => true
@@ -19,9 +19,9 @@ public class _65 {
      * "95a54e53" => false
      */
     public static void main(String[] args) {
-        String s1 = "1+";
+        String s1 = "92e1740e91";
         String s = s1;
-        System.out.println(new _65().isNumber(s));
+        System.out.println(new _0065_ValidNumber().isNumber(s));
     }
 
     //https://leetcode.com/problems/valid-number/discuss/23738/Clear-Java-solution-with-ifs
@@ -59,6 +59,7 @@ public class _65 {
                         return false;
                     }
                     numSeen = true;
+                    break;
             }
         }
 

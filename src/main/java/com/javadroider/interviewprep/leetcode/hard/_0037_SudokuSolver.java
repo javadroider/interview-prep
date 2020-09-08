@@ -1,6 +1,6 @@
 package com.javadroider.interviewprep.leetcode.hard;
 
-public class _37 {
+public class _0037_SudokuSolver {
 
     public static final int SIZE = 9;
 
@@ -36,7 +36,7 @@ public class _37 {
                 {'.', '.', '.', '2', '.', '.', '9', '.', '.'},
                 {'.', '.', '1', '9', '.', '4', '5', '7', '.'},
         };
-        _37 instance = new _37();
+        _0037_SudokuSolver instance = new _0037_SudokuSolver();
 
         instance.display(board);
         instance.solveSudoku(board);

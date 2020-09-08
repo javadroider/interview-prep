@@ -1,9 +1,9 @@
 package com.javadroider.interviewprep.leetcode.medium;
 
-public class UniquePaths {
+public class _0062_UniquePaths {
 
     public static void main(String[] args) {
-        System.out.println(new UniquePaths().uniquePaths(3, 2));
+        System.out.println(new _0062_UniquePaths().uniquePaths(3, 2));
     }
 
     public int uniquePaths(int m, int n) {

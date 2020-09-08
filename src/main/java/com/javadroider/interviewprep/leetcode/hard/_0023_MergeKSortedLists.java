@@ -6,7 +6,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.PriorityQueue;
 
-public class _23_MergeKSortedLists {
+public class _0023_MergeKSortedLists {
 
     public static void main(String[] args) {
         ListNode l1 = ListNode.getSampleLinkedList();
@@ -16,7 +16,7 @@ public class _23_MergeKSortedLists {
         list.add(l1);
         list.add(l2);
         list.add(l3);
-        ListNode.print(new _23_MergeKSortedLists().mergeKLists(list));
+        ListNode.print(new _0023_MergeKSortedLists().mergeKLists(list));
     }
 
     public ListNode mergeKLists(List<ListNode> lists) {

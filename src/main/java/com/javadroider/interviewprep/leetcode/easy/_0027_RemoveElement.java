@@ -1,6 +1,6 @@
 package com.javadroider.interviewprep.leetcode.easy;
 
-public class _27_RemoveElement {
+public class _0027_RemoveElement {
 
     public int removeElement(int[] nums, int val) {
         int uniqueIndex = 0;

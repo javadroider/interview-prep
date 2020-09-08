@@ -3,7 +3,7 @@ package com.javadroider.interviewprep.leetcode.hard;
 import com.javadroider.interviewprep.util.LinkedList;
 import com.javadroider.interviewprep.util.Node;
 
-public class _25_ReverseKNodes {
+public class _0025_ReverseKNodes {
 
     static Node recursiveReverse(Node head, int k) {
         Node current = head;
