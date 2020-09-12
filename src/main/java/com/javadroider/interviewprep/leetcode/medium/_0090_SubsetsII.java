@@ -4,10 +4,10 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-public class Subsets2 {
+public class _0090_SubsetsII {
 
     public static void main(String[] args) {
-        System.out.println(new Subsets2().subsetsWithDup1(new int[]{1, 2, 2}));
+        System.out.println(new _0090_SubsetsII().subsetsWithDup(new int[]{1, 2, 2}));
     }
 
     public List<List<Integer>> subsetsWithDup(int[] nums) {
@@ -27,27 +27,5 @@ public class Subsets2 {
         }
     }
 
-    public List<List<Integer>> subsetsWithDup1(int[] nums) {
-        if (nums == null) {
-            return null;
-        }
-
-        List<List<Integer>> res = new ArrayList<>();
-        Arrays.sort(nums);
-        backtrack1(res, nums, new ArrayList<>(), 0);
-        return res;
-    }
-
-    private void backtrack1(List<List<Integer>> res, int[] nums, List<Integer> temp, int start) {
-        res.add(new ArrayList<>(temp));
-        for (int i = start; i < nums.length; i++) {
-            if (i > start && nums[i] == nums[i - 1]) {
-                continue;
-            }
-            temp.add(nums[i]);
-            backtrack1(res, nums, temp, i + 1);
-            temp.remove(temp.size() - 1);
-        }
-    }
 }
 

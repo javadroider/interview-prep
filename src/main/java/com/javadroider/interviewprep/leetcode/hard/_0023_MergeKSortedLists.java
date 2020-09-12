@@ -19,6 +19,7 @@ public class _0023_MergeKSortedLists {
         ListNode.print(new _0023_MergeKSortedLists().mergeKLists(list));
     }
 
+    //https://leetcode.com/problems/merge-k-sorted-lists/solution/
     public ListNode mergeKLists(List<ListNode> lists) {
         ListNode dummy = new ListNode(0);
         ListNode head = dummy;
