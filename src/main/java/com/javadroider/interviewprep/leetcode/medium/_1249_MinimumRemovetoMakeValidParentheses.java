@@ -2,7 +2,7 @@ package com.javadroider.interviewprep.leetcode.medium;
 
 import java.util.Stack;
 
-public class _1249 {
+public class _1249_MinimumRemovetoMakeValidParentheses   {
 
     public static void main(String[] args) {
         //System.out.println(minRemoveToMakeValid2("))(("));

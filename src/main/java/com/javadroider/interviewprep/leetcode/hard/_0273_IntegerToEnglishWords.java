@@ -1,10 +1,24 @@
 package com.javadroider.interviewprep.leetcode.hard;
 
-public class _273 {
+public class _0273_IntegerToEnglishWords {
     public static void main(String[] args) {
-        System.out.println(new _273().numberToWords(4321000));
+        System.out.println(new _0273_IntegerToEnglishWords().numberToWords(1234567891));
     }
 
+    /*
+
+    Approach 1: Divide and conquer
+
+    Let's simplify the problem by representing it as a set of simple sub-problems.
+    One could split the initial integer 1234567890 on the groups containing not more than
+    three digits 1.234.567.890.
+    That results in representation 1 Billion 234 Million 567 Thousand 890 and
+    reduces the initial problem to how to convert 3-digit integer to English word.
+    One could split further 234 -> 2 Hundred 34 into two sub-problems : convert 1-digit integer and convert 2-digit integer.
+    The first one is trivial. The second one could be reduced to the first one for all 2-digit integers but
+    the ones from 10 to 19 which should be considered separately.
+
+     */
     private static final String[] LESS_THAN_20 = {"", "One", "Two", "Three", "Four", "Five", "Six", "Seven", "Eight", "Nine", "Ten", "Eleven", "Twelve", "Thirteen", "Fourteen", "Fifteen", "Sixteen", "Seventeen", "Eighteen", "Nineteen"};
     private static final String[] TENS = {"", "Ten", "Twenty", "Thirty", "Forty", "Fifty", "Sixty", "Seventy", "Eighty", "Ninety"};
     private static final String[] THOUSANDS = {"", "Thousand", "Million", "Billion"};

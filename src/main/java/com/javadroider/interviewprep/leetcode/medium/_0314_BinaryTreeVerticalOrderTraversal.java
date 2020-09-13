@@ -78,7 +78,7 @@ import java.util.*;
  * [7]
  * ]
  */
-public class _314 {
+public class _0314_BinaryTreeVerticalOrderTraversal {
 
     public static void main(String[] args) {
 
@@ -115,6 +115,7 @@ public class _314 {
 
         return output;
     }
+
 
     class Pair {
         TreeNode root;

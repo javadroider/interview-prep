@@ -5,7 +5,7 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class _211 {
+public class _0211_DesignAddAndSearchWordsDataStructure {
 
     public static void main(String[] args) {
         WordDictionary wordDictionary = new WordDictionary();
@@ -18,10 +18,71 @@ public class _211 {
         System.out.println(wordDictionary.search("b.."));//true
     }
 
-    //https://leetcode.com/problems/design-add-and-search-words-data-structure/discuss/59669/Java-Solution-easy-understand
+    //https://leetcode.com/problems/design-add-and-search-words-data-structure/solution/
     static class WordDictionary {
 
+        private Trie root;
+
+        /**
+         * Initialize your data structure here.
+         */
+        public WordDictionary() {
+            root = new Trie();
+        }
+
+        /**
+         * Adds a word into the data structure.
+         */
+        public void addWord(String word) {
+            Trie runner = root;
+            for (Character ch : word.toCharArray()) {
+                if (!runner.children.containsKey(ch)) {
+                    runner.children.put(ch, new Trie());
+                }
+                runner = runner.children.get(ch);
+            }
+            runner.isWord = true;
+        }
+
+        /**
+         * Returns if the word is in the data structure. A word could contain the dot character '.' to represent any one letter.
+         */
+        public boolean search(String word) {
+            return find(word, root);
+        }
+
+        private boolean find(String word, Trie node) {
+            for (int i = 0; i < word.length(); i++) {
+                char ch = word.charAt(i);
+                if (!node.children.containsKey(ch)) {
+                    if (ch == '.') {
+                        for (Character ch1 : node.children.keySet()) {
+                            if (find(word.substring(i + 1), node.children.get(ch1))) {
+                                return true;
+                            }
+                        }
+
+                    }
+                    return false;
+                } else {
+                    node = node.children.get(ch);
+                }
+            }
+
+            return node.isWord;
+        }
+    }
+
+    static class Trie {
+        Map<Character, Trie> children = new HashMap<>();
+        boolean isWord;
+    }
+
+    //https://leetcode.com/problems/design-add-and-search-words-data-structure/discuss/59669/Java-Solution-easy-understand
+    static class WordDictionary1 {
+
         private Map<Integer, List<String>> map = new HashMap<>();
+
         /**
          * Adds a word into the data structure.
          */

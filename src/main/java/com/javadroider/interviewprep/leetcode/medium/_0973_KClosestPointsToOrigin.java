@@ -2,7 +2,7 @@ package com.javadroider.interviewprep.leetcode.medium;
 
 import java.util.PriorityQueue;
 
-public class _973 {
+public class _0973_KClosestPointsToOrigin {
 
     public static void main(String[] args) {
 

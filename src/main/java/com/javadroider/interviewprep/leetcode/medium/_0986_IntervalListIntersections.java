@@ -3,7 +3,7 @@ package com.javadroider.interviewprep.leetcode.medium;
 import java.util.ArrayList;
 import java.util.List;
 
-public class _986 {
+public class _0986_IntervalListIntersections {
 
     public static void main(String[] args) {
 

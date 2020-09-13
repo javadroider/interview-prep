@@ -7,10 +7,10 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class RightSideViewOfBinaryTree {
+public class _0199_BinaryTreeRightSideView {
 
     public static void main(String[] args) {
-        System.out.println(new RightSideViewOfBinaryTree().rightSideView(TreeNode.sample()));
+        System.out.println(new _0199_BinaryTreeRightSideView().rightSideView(TreeNode.sample()));
     }
 
     public List<Integer> rightSideView(TreeNode root) {

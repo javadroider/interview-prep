@@ -2,12 +2,12 @@ package com.javadroider.interviewprep.leetcode.hard;
 
 import com.javadroider.interviewprep.util.TreeNode;
 
-public class _124 {
+public class _0124_BinaryTreeMaximumPathSum {
 
     public static void main(String[] args) {
         TreeNode minusThree = new TreeNode(-3);
-        //System.out.println(new _124().maxPathSum(minusThree));
-        System.out.println(new _124().maxPathSum(TreeNode.sample1()));
+        //System.out.println(new _0124_BinaryTreeMaximumPathSum().maxPathSum(minusThree));
+        System.out.println(new _0124_BinaryTreeMaximumPathSum().maxPathSum(TreeNode.sample1()));
     }
 
 

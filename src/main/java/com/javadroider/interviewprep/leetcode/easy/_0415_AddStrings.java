@@ -1,8 +1,8 @@
 package com.javadroider.interviewprep.leetcode.easy;
 
-public class _415 {
+public class _0415_AddStrings {
     public static void main(String[] args) {
-        System.out.println(new _415().addStrings("123","34"));
+        System.out.println(new _0415_AddStrings().addStrings("123","34"));
     }
     public String addStrings(String num1, String num2) {
         if(num1 == null && num2 == null){

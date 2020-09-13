@@ -4,11 +4,11 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.Stack;
 
-public class _636 {
+public class _0636_ExclusiveTimeOfFunctions {
 
     public static void main(String[] args) {
         String[] logs = {"0:start:0", "1:start:2", "1:end:5", "0:end:6"};
-        System.out.println(Arrays.toString(new _636().exclusiveTime(2, Arrays.asList(logs))));
+        System.out.println(Arrays.toString(new _0636_ExclusiveTimeOfFunctions().exclusiveTime(2, Arrays.asList(logs))));
     }
 
     public int[] exclusiveTime(int n, List<String> logs) {
