@@ -5,37 +5,47 @@ import java.util.Stack;
 public class _0227_BasicCalculatorII {
 
     public static void main(String[] args) {
-        System.out.println(new _0227_BasicCalculatorII().calculate("3*2*2"));
+        System.out.println(new _0227_BasicCalculatorII().calculate("3-2*2"));
     }
 
     //https://leetcode.com/problems/basic-calculator-ii/discuss/63003/Share-my-java-solution
-    public int calculate1(String s) {
+    public int calculate(String s) {
         if (s == null || s.length() == 0) return 0;
         Stack<Integer> stack = new Stack<>();
         s += '+';
         char op = '+';
-        for (int i = 0, n = 0; i < s.length(); i++) {
+        int n = 0;
+        for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             if (c >= '0' && c <= '9') {
                 n = n * 10 + c - '0';
                 continue;
             }
-            if (c == ' ') continue;
-            if (op == '+') stack.push(n);
-            else if (op == '-') stack.push(-n);
-            else if (op == '*') stack.push(stack.pop() * n);
-            else if (op == '/') stack.push(stack.pop() / n);
+            if (c == ' ') {
+                continue;
+            }
+            if (op == '+') {
+                stack.push(n);
+            } else if (op == '-') {
+                stack.push(-n);
+            } else if (op == '*') {
+                stack.push(stack.pop() * n);
+            } else if (op == '/') {
+                stack.push(stack.pop() / n);
+            }
             op = c;
             n = 0;
         }
 
         int total = 0;
-        while (!stack.isEmpty()) total += stack.pop();
+        while (!stack.isEmpty()) {
+            total += stack.pop();
+        }
         return total;
     }
 
 
-    public int calculate(String s) {
+    public int calculate1(String s) {
         int sum = 0;
         int tempSum = 0;
         int num = 0;
@@ -43,14 +53,14 @@ public class _0227_BasicCalculatorII {
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             if (Character.isDigit(c)) num = num * 10 + c - '0';
-            if (i == s.length() - 1 || !Character.isDigit(c) && c!=' ') {
-                switch(lastSign) {
+            if (i == s.length() - 1 || !Character.isDigit(c) && c != ' ') {
+                switch (lastSign) {
                     case '+':
-                        sum+=tempSum;
+                        sum += tempSum;
                         tempSum = num;
                         break;
                     case '-':
-                        sum+=tempSum;
+                        sum += tempSum;
                         tempSum = -num;
                         break;
                     case '*':
@@ -61,10 +71,10 @@ public class _0227_BasicCalculatorII {
                         break;
                 }
                 lastSign = c;
-                num=0;
+                num = 0;
             }
         }
-        sum+=tempSum;
+        sum += tempSum;
         return sum;
     }
 }

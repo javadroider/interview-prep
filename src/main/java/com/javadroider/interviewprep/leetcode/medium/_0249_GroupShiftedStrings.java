@@ -20,7 +20,7 @@ import java.util.*;
  * ["a","z"]
  * ]
  */
-public class _249 {
+public class _0249_GroupShiftedStrings {
 
     public static void main(String[] args) {
         String[] input = {"abc", "bcd", "acef", "xyz", "az", "ba", "a", "z"};

@@ -10,7 +10,7 @@ public class _0636_ExclusiveTimeOfFunctions {
         String[] logs = {"0:start:0", "1:start:2", "1:end:5", "0:end:6"};
         System.out.println(Arrays.toString(new _0636_ExclusiveTimeOfFunctions().exclusiveTime(2, Arrays.asList(logs))));
     }
-
+    //https://leetcode.com/problems/exclusive-time-of-functions/discuss/105062/Java-Stack-Solution-O(n)-Time-O(n)-Space
     public int[] exclusiveTime(int n, List<String> logs) {
         int[] res = new int[n];
         Stack<Integer> stack = new Stack<>();

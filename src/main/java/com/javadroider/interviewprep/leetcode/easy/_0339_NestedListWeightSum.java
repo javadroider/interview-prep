@@ -4,7 +4,7 @@ import java.util.LinkedList;
 import java.util.List;
 import java.util.Queue;
 
-public class _339 {
+public class _0339_NestedListWeightSum {
 
     //https://leetcode.com/problems/nested-list-weight-sum/discuss/79933/Java-Solution%3A-similar-to-tree-level-order-traversal
     public int depthSum(List<NestedInteger> nestedList) {
@@ -27,6 +27,23 @@ public class _339 {
                 counter--;
             }
             level++;
+        }
+        return sum;
+    }
+
+    //https://leetcode.com/problems/nested-list-weight-sum/solution/
+    public int depthSum1(List<NestedInteger> nestedList) {
+        return depthSum(nestedList, 1);
+    }
+
+    public int depthSum(List<NestedInteger> list, int depth) {
+        int sum = 0;
+        for (NestedInteger n : list) {
+            if (n.isInteger()) {
+                sum += n.getInteger() * depth;
+            } else {
+                sum += depthSum(n.getList(), depth + 1);
+            }
         }
         return sum;
     }

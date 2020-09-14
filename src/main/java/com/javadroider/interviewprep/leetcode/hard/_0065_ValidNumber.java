@@ -41,16 +41,16 @@ public class _0065_ValidNumber {
                     dotSeen = true;
                     break;
                 case 'e':
-                    if (eSeen || !numSeen) {
+                    if (eSeen || !numSeen) {//numSeen check is needed for 'e89'
                         return false;
                     }
                     eSeen = true;
-                    //to handle scenario 1e
+                    //to handle scenario 1e or 0e. Digit should come after e
                     numSeen = false;
                     break;
                 case '-':
                 case '+':
-                    if (i > 0 && s.charAt(i - 1) != 'e') {
+                    if (i > 0 && s.charAt(i - 1) != 'e') {//ex : 6+1
                         return false;
                     }
                     break;

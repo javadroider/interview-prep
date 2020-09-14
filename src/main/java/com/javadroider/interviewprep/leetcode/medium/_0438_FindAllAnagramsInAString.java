@@ -2,13 +2,13 @@ package com.javadroider.interviewprep.leetcode.medium;
 
 import java.util.*;
 
-public class _438 {
+public class _0438_FindAllAnagramsInAString {
 
     //https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007/Sliding-Window-algorithm-template-to-solve-all-the-Leetcode-substring-search-problem.
     public static void main(String[] args) {
-        System.out.println(new _438().findAnagrams("cbaebabacd", "abc"));
-        //System.out.println(new _438().findAnagrams("cbeababacd", "abc"));
-        //System.out.println(new _438().findAnagrams("abcd", "abc"));
+        System.out.println(new _0438_FindAllAnagramsInAString().findAnagrams("cbaebabacd", "abc"));
+        //System.out.println(new _0438_FindAllAnagramsInAString().findAnagrams("cbeababacd", "abc"));
+        //System.out.println(new _0438_FindAllAnagramsInAString().findAnagrams("abcd", "abc"));
     }
 
     public List<Integer> findAnagrams(String s, String p) {

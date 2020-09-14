@@ -2,7 +2,7 @@ package com.javadroider.interviewprep.leetcode.medium;
 
 import java.util.*;
 
-public class _133 {
+public class _0133_CloneGraph {
 
     //https://leetcode.com/problems/clone-graph/discuss/250216/BFS-and-DFS-simple-Java
     public static void main(String[] args) {
@@ -10,6 +10,11 @@ public class _133 {
     }
 
     public Node cloneGraph(Node node) {
+
+        if (node == null) {
+            return node;
+        }
+
         Queue<Node> queue = new LinkedList<>();
         Map<Node, Node> map = new HashMap<>();
         map.put(node, new Node(node.val, new ArrayList<>()));

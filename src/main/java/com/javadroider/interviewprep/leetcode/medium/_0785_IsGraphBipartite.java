@@ -3,12 +3,12 @@ package com.javadroider.interviewprep.leetcode.medium;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class _785 {
+public class _0785_IsGraphBipartite {
 
     public static void main(String[] args) {
         int[][] graph = {{1, 3}, {0, 2}, {1, 3}, {0, 2}};
         //int[][] graph = {{1, 2, 3}, {0, 2}, {0, 1, 3}, {0, 2}};
-        System.out.println(new _785().isBipartite(graph));
+        System.out.println(new _0785_IsGraphBipartite().isBipartite(graph));
     }
 
     //https://leetcode.com/problems/is-graph-bipartite/discuss/115487/Java-Clean-DFS-solution-with-Explanation
@@ -16,7 +16,7 @@ public class _785 {
         int n = graph.length;
         int[] colors = new int[n];
 
-        for (int i = 0; i < n; i++) {              //This graph might be a disconnected graph. So check each unvisited node.
+        for (int i = 0; i < n; i++) {//This graph might be a disconnected graph. So check each unvisited node.
             if (colors[i] == 0 && !validColor(graph, colors, 1, i)) {
                 return false;
             }

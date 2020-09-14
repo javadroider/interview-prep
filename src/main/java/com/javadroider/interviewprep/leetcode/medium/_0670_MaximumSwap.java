@@ -1,6 +1,6 @@
 package com.javadroider.interviewprep.leetcode.medium;
 
-public class _670 {
+public class _0670_MaximumSwap {
 
     public static void main(String[] args) {
         int n1 = 12335431;
@@ -8,13 +8,36 @@ public class _670 {
         int n3 = 2135;
         int n4 = 5132;
         int n5 = 123;
-        int num = n5;
+        int n6 = 2736;
+        int num = n6;
 
-        System.out.println(new _670().maximumSwap1(num));
-        System.out.println(new _670().maximumSwap2(num));
+        System.out.println(new _0670_MaximumSwap().maximumSwap(num));
+//        System.out.println(new _0670_MaximumSwap().maximumSwap1(num));
+//        System.out.println(new _0670_MaximumSwap().maximumSwap2(num));
         //12335431 52331431
         //49658 94658
         //2135 5132
+    }
+
+    //https://leetcode.com/problems/maximum-swap/solution/
+    public int maximumSwap(int num) {
+        char[] A = Integer.toString(num).toCharArray();
+        int[] last = new int[10];
+        for (int i = 0; i < A.length; i++) {
+            last[A[i] - '0'] = i;
+        }
+
+        for (int i = 0; i < A.length; i++) {
+            for (int d = 9; d > A[i] - '0'; d--) {
+                if (last[d] > i) {
+                    char tmp = A[i];
+                    A[i] = A[last[d]];
+                    A[last[d]] = tmp;
+                    return Integer.valueOf(new String(A));
+                }
+            }
+        }
+        return num;
     }
 
     //https://leetcode.com/problems/maximum-swap/discuss/107073/C%2B%2B-one-pass-simple-and-fast-solution%3A-1-3ms-O(n)-time
@@ -66,7 +89,7 @@ public class _670 {
     }
 
     //https://www.geeksforgeeks.org/largest-number-with-one-swap-allowed/
-    public int maximumSwap(int num) {
+    public int maximumSwap3(int num) {
         int maxDigit = -1;
         int maxDigitIndx = -1;
         int lIndx = -1;
