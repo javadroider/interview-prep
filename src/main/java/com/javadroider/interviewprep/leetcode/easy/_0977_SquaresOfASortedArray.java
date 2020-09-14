@@ -2,10 +2,10 @@ package com.javadroider.interviewprep.leetcode.easy;
 
 import java.util.Arrays;
 
-public class SquaresOfSortedArray {
+public class _0977_SquaresOfASortedArray {
 
     public static void main(String[] args) {
-        System.out.println(Arrays.toString(new SquaresOfSortedArray().sortedSquares(new int[]{-4, -1, 0, 3, 10})));
+        System.out.println(Arrays.toString(new _0977_SquaresOfASortedArray().sortedSquares(new int[]{-4, -1, 0, 3, 10})));
     }
 
     //-4,-1,0,3,10

@@ -2,7 +2,7 @@ package com.javadroider.interviewprep.leetcode.easy;
 
 import java.util.Stack;
 
-public class _155 {
+public class _0155_MinStack {
 
     public static void main(String[] args) {
         MinStack obj = new MinStack();
@@ -18,13 +18,57 @@ public class _155 {
 
     static class MinStack {
 
+        private Node head = null;
+
+        /**
+         * initialize your data structure here.
+         */
+        public MinStack() {
+
+        }
+
+        public void push(int x) {
+            if (head == null) {
+                head = new Node(x, x, null);
+            } else {
+                head = new Node(x, Math.min(x, head.min), head);
+            }
+        }
+
+        public void pop() {
+            head = head.next;
+        }
+
+        public int top() {
+            return head.val;
+        }
+
+        public int getMin() {
+            return head.min;
+        }
+    }
+
+    static class Node {
+        int val;
+        int min;
+        Node next;
+
+        Node(int val, int min, Node next) {
+            this.val = val;
+            this.min = min;
+            this.next = next;
+        }
+    }
+
+    static class MinStack1 {
+
         private Stack<Integer> minStack = new Stack<>();
         private Stack<Integer> stack = new Stack<>();
 
         /**
          * initialize your data structure here.
          */
-        public MinStack() {
+        public MinStack1() {
 
         }
 

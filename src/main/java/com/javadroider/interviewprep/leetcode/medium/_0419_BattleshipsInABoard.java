@@ -1,9 +1,9 @@
 package com.javadroider.interviewprep.leetcode.medium;
 
-public class CountBattleShips {
+public class _0419_BattleshipsInABoard {
     public static void main(String[] args) {
         char [][] mat = {{'X','0','0','X'},{'0','0','0','X'},{'0','0','0','X'},{'0','0','0','X'}};
-        System.out.println(new CountBattleShips().countBattleships(mat));
+        System.out.println(new _0419_BattleshipsInABoard().countBattleships(mat));
     }
 
     public int countBattleships(char[][] board) {

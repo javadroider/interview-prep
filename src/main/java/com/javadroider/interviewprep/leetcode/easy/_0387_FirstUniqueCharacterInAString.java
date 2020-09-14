@@ -5,11 +5,11 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Set;
 
-public class _387 {
+public class _0387_FirstUniqueCharacterInAString {
 
     public static void main(String[] args) {
         String str = "loveleetcode";
-        System.out.println(str.charAt(new _387().firstUniqChar(str)));
+        System.out.println(str.charAt(new _0387_FirstUniqueCharacterInAString().firstUniqChar(str)));
     }
 
     public int firstUniqChar(String s) {

@@ -4,16 +4,19 @@ import com.javadroider.interviewprep.util.TreeNode;
 
 import java.util.*;
 
-public class _987 {
+public class _0987_VerticalOrderTraversalOfABinaryTree {
 
 
     public static void main(String[] args) {
+
+        Integer[] treeAsIntegersArray = {0, 5, 1, 9, null, 2, null, null, null, null, 3, 4, 8, 6, null, null, null, 7};
+        TreeNode treeRoot = TreeNode.deserializeBinaryTree(treeAsIntegersArray);
         TreeSet<Integer> set = new TreeSet<>();
         set.add(9);
         set.add(7);
         System.out.println(set);
-        System.out.println(new _987().verticalTraversal(TreeNode.sample4()));
-        System.out.println(new _987().verticalTraversalNotWorking(TreeNode.sample4()));
+        System.out.println(new _0987_VerticalOrderTraversalOfABinaryTree().verticalTraversal(TreeNode.sample4()));
+        System.out.println(new _0987_VerticalOrderTraversalOfABinaryTree().verticalTraversalNotWorking(TreeNode.sample4()));
     }
 
     //[0,5,1,9,null,2,null,null,null,null,3,4,8,6,null,null,null,7]

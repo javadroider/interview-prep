@@ -6,8 +6,8 @@ public class _0438_FindAllAnagramsInAString {
 
     //https://leetcode.com/problems/find-all-anagrams-in-a-string/discuss/92007/Sliding-Window-algorithm-template-to-solve-all-the-Leetcode-substring-search-problem.
     public static void main(String[] args) {
-        System.out.println(new _0438_FindAllAnagramsInAString().findAnagrams("cbaebabacd", "abc"));
-        //System.out.println(new _0438_FindAllAnagramsInAString().findAnagrams("cbeababacd", "abc"));
+        //System.out.println(new _0438_FindAllAnagramsInAString().findAnagrams("cbaebabacd", "abc"));
+        System.out.println(new _0438_FindAllAnagramsInAString().findAnagrams("baa", "aa"));
         //System.out.println(new _0438_FindAllAnagramsInAString().findAnagrams("abcd", "abc"));
     }
 
@@ -30,7 +30,7 @@ public class _0438_FindAllAnagramsInAString {
                 }
             }
             end++;
-            while (match == reference.size()) {
+            while (match == reference.size()) {//cbaebabacd abc
                 if (end - start == p.length()) {
                     ans.add(start);
                 }
@@ -49,45 +49,5 @@ public class _0438_FindAllAnagramsInAString {
         return ans;
     }
 
-    public List<Integer> findAnagrams1(String s, String t) {
-        List<Integer> result = new LinkedList<>();
-        if (t.length() > s.length()) {
-            return result;
-        }
-        Map<Character, Integer> map = new HashMap<>();
-        for (char c : t.toCharArray()) {
-            map.put(c, map.getOrDefault(c, 0) + 1);
-        }
-        int counter = map.size();
 
-        int begin = 0;
-        int end = 0;
-
-        while (end < s.length()) {
-            char ch = s.charAt(end);
-            if (map.containsKey(ch)) {
-                map.put(ch, map.get(ch) - 1);
-                if (map.get(ch) == 0) {
-                    counter--;
-                }
-            }
-            end++;
-
-            while (counter == 0) {
-                char tempc = s.charAt(begin);
-                if (map.containsKey(tempc)) {
-                    map.put(tempc, map.get(tempc) + 1);
-                    if (map.get(tempc) > 0) {
-                        counter++;
-                    }
-                }
-                if (end - begin == t.length()) {
-                    result.add(begin);
-                }
-                begin++;
-            }
-
-        }
-        return result;
-    }
 }

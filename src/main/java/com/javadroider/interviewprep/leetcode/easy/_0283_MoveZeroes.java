@@ -3,7 +3,7 @@ package com.javadroider.interviewprep.leetcode.easy;
 import java.util.Arrays;
 
 //https://leetcode.com/problems/move-zeroes/
-public class MoveZeroes {
+public class _0283_MoveZeroes {
     public static void main(String[] args) {
         int[] nums = {0, 1, 0, 2, 3};
         moveZeroes(nums);

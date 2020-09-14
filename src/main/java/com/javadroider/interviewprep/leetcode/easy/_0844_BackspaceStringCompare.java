@@ -1,9 +1,9 @@
 package com.javadroider.interviewprep.leetcode.easy;
 
-public class BackspaceCompare {
+public class _0844_BackspaceStringCompare {
 
     public static void main(String[] args) {
-        System.out.println(new BackspaceCompare().backspaceCompare("ab##", "c#d#"));
+        System.out.println(new _0844_BackspaceStringCompare().backspaceCompare("ab##", "c#d#"));
     }
 
     public boolean backspaceCompareBad(String S, String T) {

@@ -2,6 +2,21 @@ package com.javadroider.interviewprep.leetcode.medium;
 
 public class _0033_SearchInRotatedSortedArray {
 
+    public static void main(String[] args) {
+        //System.out.println(new SearchInRotatedArray().search(new int[]{5, 6, 7, 8, 0, 1, 2, 3}, 7));
+        //System.out.println(new SearchInRotatedArray().search(new int[]{5, 1, 3}, 5));
+        //System.out.println(new SearchInRotatedArray().search(new int[]{6, 7, 8, 0, 1, 2, 3, 4, 5}, 8));
+        System.out.println(new _0033_SearchInRotatedSortedArray().search(new int[]{4, 5, 6, 7, 8, 0, 1, 2, 3}, 2));
+
+        /**
+         *
+         * 6,7,8,0,1,2,3,4,5
+         * 2,3,4,5,6,7,8,0,1
+         * 4,5,6,7,8,0,1,2,3
+         *
+         */
+    }
+
     //https://www.youtube.com/watch?v=oTfPJKGEHcc
     public int search(int[] nums, int target) {
         /**

@@ -2,11 +2,11 @@ package com.javadroider.interviewprep.leetcode.medium;
 
 import java.util.*;
 
-public class _721 {
+public class _0721_AccountsMerge {
 
     //https://leetcode.com/problems/accounts-merge/discuss/140978/Easy-to-Understand-Union-Find-in-Java-95
     public static void main(String[] args) {
-        _721 instance = new _721();
+        _0721_AccountsMerge instance = new _0721_AccountsMerge();
         List<List<String>> accounts = new ArrayList<>();
 //        accounts.add(Arrays.asList("John", "johnsmith@mail.com", "john00@mail.com"));
 //        accounts.add(Arrays.asList("John", "johnnybravo@mail.com"));
