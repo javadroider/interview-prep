@@ -25,8 +25,8 @@ public class _0380_Insert_Delete_GetRandom_O_1 {
          * Initialize your data structure here.
          */
         public RandomizedSet() {
-            dict = new HashMap();
-            list = new ArrayList();
+            dict = new HashMap<>();
+            list = new ArrayList<>();
         }
 
         /**

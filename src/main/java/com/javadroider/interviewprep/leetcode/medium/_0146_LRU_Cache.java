@@ -41,11 +41,11 @@ public class _0146_LRU_Cache {
             if (node == null) {
                 return -1;
             }
-            moveToStart(node);
+            moveToHead(node);
             return node.val;
         }
 
-        private void moveToStart(DLNode node) {
+        private void moveToHead(DLNode node) {
             remove(node);
             add(node);
         }
@@ -71,7 +71,6 @@ public class _0146_LRU_Cache {
 
         }
 
-
         public void put(int key, int value) {
             DLNode node = map.get(key);
             if (node == null) {
@@ -85,7 +84,7 @@ public class _0146_LRU_Cache {
                 }
             } else {
                 node.val = value;
-                moveToStart(node);
+                moveToHead(node);
             }
         }
 

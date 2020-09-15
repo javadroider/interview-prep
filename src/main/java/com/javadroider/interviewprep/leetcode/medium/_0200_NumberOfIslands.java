@@ -1,10 +1,10 @@
 package com.javadroider.interviewprep.leetcode.medium;
 
-public class NumberOfIslands {
+public class _0200_NumberOfIslands {
     public static void main(String[] args) {
         char [][] mat1 = {{'1','1','1','1','0'},{'1','1','0','1','0'},{'1','1','0','0','0'},{'0','0','0','0','0'}};
         char [][] mat2 = {{'1','0','0','1'},{'0','1','1','0'},{'0','1','1','1'},{'1','0','1','1'}};
-        System.out.println(new NumberOfIslands().numIslands(mat1));
+        System.out.println(new _0200_NumberOfIslands().numIslands(mat1));
     }
 
     public int numIslands(char[][] grid) {

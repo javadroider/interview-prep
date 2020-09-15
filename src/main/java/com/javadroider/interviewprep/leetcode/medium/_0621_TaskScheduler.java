@@ -6,10 +6,10 @@ public class _0621_TaskScheduler {
 
     public static void main(String[] args) {
         char[] tasks1 = {'A', 'A', 'A', 'B', 'B', 'B'};
-        System.out.println(new _0621_TaskScheduler().leastInterval(tasks1, 0));
+        System.out.println(new _0621_TaskScheduler().leastInterval(tasks1, 2));
     }
 
-   //https://leetcode.com/problems/task-scheduler/discuss/104501/Java-PriorityQueue-solution-Similar-problem-Rearrange-string-K-distance-apart
+    //https://leetcode.com/problems/task-scheduler/discuss/104501/Java-PriorityQueue-solution-Similar-problem-Rearrange-string-K-distance-apart
     public int leastInterval(char[] tasks, int n) {
         if (tasks == null || tasks.length == 0)
             return -1;
@@ -50,8 +50,9 @@ public class _0621_TaskScheduler {
                     queue.offer(entry);
             }
             // job done
-            if (queue.isEmpty())
+            if (queue.isEmpty()) {
                 break;
+            }
             // if interval is > 0, then the machine can only be idle
             cnt += interval;
         }

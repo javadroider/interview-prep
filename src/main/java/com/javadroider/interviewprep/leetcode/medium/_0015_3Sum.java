@@ -2,7 +2,7 @@ package com.javadroider.interviewprep.leetcode.medium;
 
 import java.util.*;
 
-public class _0015_ThreeSum {
+public class _0015_3Sum {
     public static void main(String[] args) {
         int[] nums = {-1, 0, 1, 2, -1, -4};
         System.out.println(threeSum(nums));

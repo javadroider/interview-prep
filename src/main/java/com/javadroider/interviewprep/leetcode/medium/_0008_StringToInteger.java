@@ -36,7 +36,6 @@ public class _0008_StringToInteger {
             }
             int temp = Integer.MAX_VALUE / 10;
             int temp1 = Integer.MAX_VALUE % 10;
-            boolean flag = res >= temp;
             if (res > temp || res == temp && digit > temp1) {
                 return sign == -1 ? Integer.MIN_VALUE : Integer.MAX_VALUE;
             }

@@ -35,7 +35,7 @@ public class _0065_ValidNumber {
             char ch = s.charAt(i);
             switch (ch) {
                 case '.':
-                    if (dotSeen || eSeen) {
+                    if (dotSeen || eSeen) {//dot will not come after e is seen
                         return false;
                     }
                     dotSeen = true;

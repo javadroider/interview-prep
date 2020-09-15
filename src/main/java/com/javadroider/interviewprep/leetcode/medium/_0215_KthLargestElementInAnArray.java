@@ -6,7 +6,7 @@ public class _0215_KthLargestElementInAnArray {
 
     public static void main(String[] args) {
         // Creating empty priority queue
-        PriorityQueue<Integer> pQueue = new PriorityQueue<Integer>();
+        PriorityQueue<Integer> pQueue = new PriorityQueue<>();
 
         // Adding items to the pQueue using add()
         pQueue.add(10);
@@ -30,6 +30,7 @@ public class _0215_KthLargestElementInAnArray {
         PriorityQueue<Integer> queue = new PriorityQueue<>();
         for (int i = 0; i < nums.length; i++) {
             queue.offer(nums[i]);
+            System.out.println(queue);
             if (queue.size() > k) {
                 queue.poll();
             }
