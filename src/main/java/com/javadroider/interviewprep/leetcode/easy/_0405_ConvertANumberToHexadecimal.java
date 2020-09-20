@@ -13,6 +13,10 @@ public class _0405_ConvertANumberToHexadecimal {
             4. right shift 10111 => 0001
             5. 0001 & 1111 -> 1 = 1
             hexValue = 17c
+
+            1*16^2 + 7*16^1 + 12 * 16^0
+            256 + 112 + 12 = 380
+            
          */
         if (num == 0) {
             return "0";
