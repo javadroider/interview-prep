@@ -2,6 +2,8 @@ package com.javadroider.interviewprep.util;
 
 import jdk.nashorn.api.tree.Tree;
 
+import java.util.LinkedList;
+import java.util.Queue;
 import java.util.Stack;
 
 public class TreeNode {
@@ -120,6 +122,25 @@ public class TreeNode {
             }
         }
         return root;
+    }
+
+    public void levelOrder(TreeNode node) {
+        if (node == null) {
+            node = this;
+        }
+
+        Queue<TreeNode> queue = new LinkedList<>();
+        queue.add(node);
+        while (!queue.isEmpty()) {
+            TreeNode temp = queue.remove();
+            System.out.print(temp + " ");
+            if (temp.left != null) {
+                queue.add(temp.left);
+            }
+            if (temp.right != null) {
+                queue.add(temp.right);
+            }
+        }
     }
 
     public void inorder(TreeNode node) {
