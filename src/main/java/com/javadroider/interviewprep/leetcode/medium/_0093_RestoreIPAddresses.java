@@ -6,7 +6,7 @@ import java.util.List;
 public class _0093_RestoreIPAddresses {
 
     public static void main(String[] args) {
-        //System.out.println(new _0093_RestoreIPAddresses().restoreIpAddresses("25525511135"));
+        System.out.println(new _0093_RestoreIPAddresses().restoreIpAddresses("25525511135"));
         System.out.println(new _0093_RestoreIPAddresses().restoreIpAddresses("010010"));
     }
 

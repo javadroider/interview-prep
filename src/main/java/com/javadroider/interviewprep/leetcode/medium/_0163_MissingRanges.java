@@ -37,7 +37,7 @@ public class _0163_MissingRanges {
     }
 
     // formats range in the requested format
-    String formatRange(int lower, int upper) {
+    private String formatRange(int lower, int upper) {
         if (lower == upper) {
             return String.valueOf(lower);
         } else {

@@ -6,6 +6,7 @@ public class _0062_UniquePaths {
         System.out.println(new _0062_UniquePaths().uniquePaths(3, 2));
     }
 
+    //https://leetcode.com/problems/unique-paths/solution/
     public int uniquePaths(int m, int n) {
 
         int dp[][] = new int[m][n];

@@ -66,17 +66,4 @@ public class _0034_FindFirstAndLastPositionOfElementInSortedArray {
         return idx;
     }
 
-    private int bs(int[] nums, int target, int lo) {
-        int hi = nums.length - 1;
-        while (lo < hi) {
-            int mid = (lo + hi) >>> 1;
-            if (target > nums[mid]) {
-                lo = mid + 1;
-            } else {
-                hi = mid - 1;
-            }
-        }
-
-        return lo;
-    }
 }

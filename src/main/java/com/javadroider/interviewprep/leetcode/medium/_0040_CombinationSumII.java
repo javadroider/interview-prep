@@ -6,6 +6,10 @@ import java.util.List;
 
 public class _0040_CombinationSumII {
 
+    public static void main(String[] args) {
+        System.out.println(new _0040_CombinationSumII().combinationSum2(new int[]{10, 1, 2, 7, 6, 1, 5}, 8));
+    }
+
     //https://leetcode.com/problems/combination-sum/discuss/16502/A-general-approach-to-backtracking-questions-in-Java-(Subsets-Permutations-Combination-Sum-Palindrome-Partitioning)
     public List<List<Integer>> combinationSum2(int[] candidates, int target) {
         if (candidates == null) {
@@ -26,6 +30,7 @@ public class _0040_CombinationSumII {
 
         if (remain == 0) {
             res.add(new ArrayList<>(temp));
+            return;
         }
 
         for (int i = start; i < nums.length; i++) {

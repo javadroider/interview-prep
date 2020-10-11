@@ -50,7 +50,7 @@ public class _0065_ValidNumber {
                     break;
                 case '-':
                 case '+':
-                    if (i > 0 && s.charAt(i - 1) != 'e') {//ex : 6+1
+                    if (i > 0 && s.charAt(i - 1) != 'e') {//ex : 6e-1
                         return false;
                     }
                     break;

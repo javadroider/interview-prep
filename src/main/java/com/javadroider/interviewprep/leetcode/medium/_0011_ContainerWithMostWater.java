@@ -3,6 +3,7 @@ package com.javadroider.interviewprep.leetcode.medium;
 public class _0011_ContainerWithMostWater {
 
     public int maxArea(int[] height) {
+        //new _0977_SquaresOfASortedArray()
         int lo = 0;
         int hi = height.length - 1;
         int max = Integer.MIN_VALUE;

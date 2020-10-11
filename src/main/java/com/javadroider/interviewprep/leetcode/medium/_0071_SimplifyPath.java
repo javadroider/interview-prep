@@ -19,7 +19,7 @@ public class _0071_SimplifyPath {
         }
 
         // Initialize a stack
-        Stack<String> stack = new Stack<String>();
+        Stack<String> stack = new Stack<>();
         String[] components = path.split("/");
 
         // Split the input string on "/" as the delimiter

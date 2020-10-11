@@ -11,6 +11,7 @@ public class _1004_MaxConsecutiveOnesIII {
         int start = 0;
         int ret = 0;
         int zeroCount = 0;
+        // A = [1,1,1,0,0,0,1,1,1,1,0], K = 2
         for (int end = 0; end < A.length; end++) {
             if (A[end] == 0) {
                 zeroCount++;

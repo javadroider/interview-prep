@@ -26,6 +26,10 @@ public class _0253_MeetingRoomsII {
     //https://www.programcreek.com/2014/05/leetcode-meeting-rooms-ii-java/
     public int minMeetingRooms(int[][] intervals) {
 
+        /*
+            Input: [[0, 30],[5, 10],[15, 20]]
+            Output: 2
+         */
         Arrays.sort(intervals, (i1, i2) -> Integer.compare(i1[0], i2[0]));
         PriorityQueue<Integer> pq = new PriorityQueue<>();
         int count = 0;

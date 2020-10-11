@@ -30,9 +30,10 @@ public class _0791_CustomSortString {
     //https://leetcode.com/problems/custom-sort-string/solution/
     /*
 
-    Time Complexity: O(S.length+T.length)O(S.\text{length} + T.\text{length})O(S.length+T.length), the time it takes to iterate through S and T
+        Time Complexity: O(S.length+T.length), the time it takes to iterate through S and T
 
-    Space Complexity: O(T.length)O(T.\text{length})O(T.length). We count at most 26 different lowercase letters, but the final answer has the same length as T.
+        Space Complexity: O(T.length).
+        We count at most 26 different lowercase letters, but the final answer has the same length as T.
 
      */
     public String customSortString(String S, String T) {

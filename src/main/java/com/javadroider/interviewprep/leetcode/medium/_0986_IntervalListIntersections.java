@@ -21,17 +21,17 @@ public class _0986_IntervalListIntersections {
 
         while (aIndex < A.length && bIndex < B.length) {
 
-            int max = Math.max(A[aIndex][0], B[bIndex][0]);
-            int min = Math.min(A[aIndex][1], B[bIndex][1]);
+            int start = Math.max(A[aIndex][0], B[bIndex][0]);
+            int end = Math.min(A[aIndex][1], B[bIndex][1]);
 
-            if (min >= max) {
-                res.add(new int[]{max, min});
+            if (end >= start) {
+                res.add(new int[]{start, end});
             }
 
-            if (A[aIndex][1] == min) {
+            if (A[aIndex][1] == end) {
                 aIndex++;
             }
-            if (B[bIndex][1] == min) {
+            if (B[bIndex][1] == end) {
                 bIndex++;
             }
         }

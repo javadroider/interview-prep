@@ -27,7 +27,7 @@ public class _0039_CombinationSum {
 
         for (int i = start; i < nums.length; i++) {
             temp.add(nums[i]);
-            backtrack(res, nums, temp, remainSum - nums[i], i);
+            backtrack(res, nums, temp, remainSum - nums[i], i);// not i + 1 because we can reuse same elements
             temp.remove(temp.size() - 1);
         }
     }

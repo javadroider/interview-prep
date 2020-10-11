@@ -8,10 +8,10 @@ public class _0721_AccountsMerge {
     public static void main(String[] args) {
         _0721_AccountsMerge instance = new _0721_AccountsMerge();
         List<List<String>> accounts = new ArrayList<>();
-//        accounts.add(Arrays.asList("John", "johnsmith@mail.com", "john00@mail.com"));
-//        accounts.add(Arrays.asList("John", "johnnybravo@mail.com"));
-//        accounts.add(Arrays.asList("John", "johnsmith@mail.com", "john_newyork@mail.com"));
-//        accounts.add(Arrays.asList("Mary", "mary@mail.com"));
+        accounts.add(Arrays.asList("John", "johnsmith@mail.com", "john00@mail.com"));
+        accounts.add(Arrays.asList("John", "johnnybravo@mail.com"));
+        accounts.add(Arrays.asList("John", "johnsmith@mail.com", "john_newyork@mail.com"));
+        accounts.add(Arrays.asList("Mary", "mary@mail.com"));
 
 //        accounts.add(Arrays.asList("David","David0@m.co","David4@m.co","David3@m.co"));
 //        accounts.add(Arrays.asList("David","David5@m.co","David5@m.co","David0@m.co"));
@@ -27,10 +27,10 @@ public class _0721_AccountsMerge {
 //        accounts.add(Arrays.asList("David","David1@m.co","David2@m.co"));
         //Expect: [["David","David0@m.co","David1@m.co","David2@m.co","David3@m.co","David4@m.co","David5@m.co"]]
 
-        accounts.add(Arrays.asList("David","David1@m.co","David2@m.co"));
-        accounts.add(Arrays.asList("David","David2@m.co","David3@m.co"));
-        accounts.add(Arrays.asList("David","David3@m.co","David4@m.co"));
-        accounts.add(Arrays.asList("David","David4@m.co","David5@m.co"));
+//        accounts.add(Arrays.asList("David","David1@m.co","David2@m.co"));
+//        accounts.add(Arrays.asList("David","David2@m.co","David3@m.co"));
+//        accounts.add(Arrays.asList("David","David3@m.co","David4@m.co"));
+//        accounts.add(Arrays.asList("David","David4@m.co","David5@m.co"));
 
         System.out.println(instance.accountsMerge(accounts));
     }

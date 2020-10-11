@@ -45,10 +45,11 @@ public class _0528_RandomPickWithWeight {
             while (low < high) {
                 // better to avoid the overflow
                 int mid = low + (high - low) / 2;
-                if (target > this.prefixSums[mid])
+                if (target > this.prefixSums[mid]) {
                     low = mid + 1;
-                else
+                } else {
                     high = mid;
+                }
             }
             return low;
         }
