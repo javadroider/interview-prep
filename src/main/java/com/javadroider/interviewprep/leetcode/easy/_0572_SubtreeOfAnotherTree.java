@@ -2,10 +2,10 @@ package com.javadroider.interviewprep.leetcode.easy;
 
 import com.javadroider.interviewprep.util.TreeNode;
 
-public class SubtreeOfAnotherTree {
+public class _0572_SubtreeOfAnotherTree {
 
     public static void main(String[] args) {
-        System.out.println(new SubtreeOfAnotherTree().isSubtree(TreeNode.sample(), new TreeNode(13)));
+        System.out.println(new _0572_SubtreeOfAnotherTree().isSubtree(TreeNode.sample(), new TreeNode(13)));
     }
 
     public boolean isSubtree(TreeNode s, TreeNode t) {
