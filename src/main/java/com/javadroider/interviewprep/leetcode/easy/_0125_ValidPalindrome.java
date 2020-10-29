@@ -6,6 +6,7 @@ public class _0125_ValidPalindrome {
         System.out.println(new _0125_ValidPalindrome().isPalindrome("A man, a plan, a canal: Panama"));
     }
 
+    //O(N), O(1)
     //https://leetcode.com/problems/valid-palindrome/solution/
     public boolean isPalindrome(String s) {
         if (s == null || s.trim().length() == 0) {

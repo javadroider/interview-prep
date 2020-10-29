@@ -8,21 +8,18 @@ public class _0953_VerifyingAnAlienDictionary {
 
     public boolean isAlienSorted(String[] words, String order) {
 
-
         for (int i = 0; i < order.length(); i++) {
             map.put(order.charAt(i), i);
         }
-
         for (int i = 0; i < words.length - 1; i++) {
             if (compare(words[i], words[i + 1]) > 0) {
                 return false;
             }
         }
-
         return true;
     }
-
     private int compare(String w1, String w2) {
+
         int min = Math.min(w1.length(), w2.length());
         int index = 0;
         while (index < min) {
@@ -35,7 +32,6 @@ public class _0953_VerifyingAnAlienDictionary {
             }
             index++;
         }
-
         return w1.length() < w2.length() ? -1 : 1;
     }
 }

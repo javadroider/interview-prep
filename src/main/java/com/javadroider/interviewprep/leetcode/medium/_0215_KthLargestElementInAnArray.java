@@ -30,7 +30,6 @@ public class _0215_KthLargestElementInAnArray {
         PriorityQueue<Integer> queue = new PriorityQueue<>();
         for (int i = 0; i < nums.length; i++) {
             queue.offer(nums[i]);
-            System.out.println(queue);
             if (queue.size() > k) {
                 queue.poll();
             }

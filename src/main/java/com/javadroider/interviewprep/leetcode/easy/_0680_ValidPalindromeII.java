@@ -3,7 +3,7 @@ package com.javadroider.interviewprep.leetcode.easy;
 public class _0680_ValidPalindromeII {
 
     public static void main(String[] args) {
-        System.out.println(new _0680_ValidPalindromeII().validPalindrome("deeee"));
+        System.out.println(new _0680_ValidPalindromeII().validPalindrome("abca"));
     }
 
     //https://leetcode.com/problems/valid-palindrome-ii/discuss/107714/Java-solution-isPalindrome

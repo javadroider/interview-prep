@@ -61,14 +61,12 @@ public class _0211_DesignAddAndSearchWordsDataStructure {
                                 return true;
                             }
                         }
-
                     }
                     return false;
                 } else {
                     node = node.children.get(ch);
                 }
             }
-
             return node.isWord;
         }
     }
@@ -83,6 +81,7 @@ public class _0211_DesignAddAndSearchWordsDataStructure {
 
         private Map<Integer, List<String>> map = new HashMap<>();
 
+        //O(M), O(M)
         /**
          * Adds a word into the data structure.
          */
@@ -92,6 +91,7 @@ public class _0211_DesignAddAndSearchWordsDataStructure {
             map.get(length).add(word);
         }
 
+        //O(M * N), O(M)
         /**
          * Returns if the word is in the data structure. A word could contain the dot
          * character '.' to represent any one letter.

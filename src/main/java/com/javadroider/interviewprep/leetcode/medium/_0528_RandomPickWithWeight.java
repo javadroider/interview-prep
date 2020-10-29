@@ -39,7 +39,7 @@ public class _0528_RandomPickWithWeight {
 
         public int pickIndex() {
             double target = this.totalSum * Math.random();//important
-
+            //1, 3, 7
             // run a binary search to find the target zone
             int low = 0, high = this.prefixSums.length;
             while (low < high) {

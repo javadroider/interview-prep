@@ -18,6 +18,7 @@ public class _0163_MissingRanges {
 
         // Edge case 1) Missing ranges at the beginning
         if (nums[0] > lower) {
+            //nums = [3,50,75], lower = 0, upper = 99
             missingRanges.add(formatRange(lower, nums[0] - 1));
         }
 
@@ -30,6 +31,7 @@ public class _0163_MissingRanges {
 
         // Edge case 2) Missing ranges at the end
         if (nums[n - 1] < upper) {
+            //nums = [0,1,3,50,75], lower = 0, upper = 99
             missingRanges.add(formatRange(nums[n - 1] + 1, upper));
         }
 

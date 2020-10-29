@@ -17,7 +17,7 @@ public class _0050PowerOfX {
             x = 1 / x;
         }
         /*
-            x^n = x^n/2 * x^n/2 = (x*x)n/2 if n is even
+            x^n = x^n/2 * x^n/2 = (x*x)^n/2 if n is even
             x^n = x* x^n-1 =
             n == 0 -> 1
 

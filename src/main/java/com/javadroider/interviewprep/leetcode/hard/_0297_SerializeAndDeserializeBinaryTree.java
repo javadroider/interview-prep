@@ -23,12 +23,14 @@ public class _0297_SerializeAndDeserializeBinaryTree {
 
     public static class Codec {
 
+        //TC: O(N)
         // Encodes a tree to a single string.
         public String serialize(TreeNode root) {
             StringBuffer sb = new StringBuffer("");
             serialize(sb, root);
             return sb.toString();
         }
+
 
         private void serialize(StringBuffer sb, TreeNode root) {
             if (root == null) {
@@ -45,6 +47,7 @@ public class _0297_SerializeAndDeserializeBinaryTree {
             return deserialize(new LinkedList<>(Arrays.asList(data.split(","))));
         }
 
+        //TC: O(N)
         private TreeNode deserialize(Queue<String> queue) {
 
             String val = queue.poll();

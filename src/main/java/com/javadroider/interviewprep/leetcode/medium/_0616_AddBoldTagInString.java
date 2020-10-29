@@ -5,12 +5,42 @@ import java.util.*;
 public class _0616_AddBoldTagInString {
 
     public static void main(String[] args) {
-//        System.out.println(new _0616_AddBoldTagInString().addBoldTag("abcxyz123", new String[]{"abc", "123"}));
-        System.out.println(new _0616_AddBoldTagInString().addBoldTag("aaabbcc", new String[]{"aaa", "aab", "bc"}));
+        System.out.println(new _0616_AddBoldTagInString().addBoldTag("abcxyz123", new String[]{"abc", "123"}));
+        // System.out.println(new _0616_AddBoldTagInString().addBoldTag("aaabbcc", new String[]{"aaa", "aab", "bc"}));
+    }
+
+    //https://leetcode.com/problems/add-bold-tag-in-string/discuss/104248/Java-Solution-boolean-array/149578
+    public String addBoldTag(String s, String[] dict) {
+        boolean[] bold = new boolean[s.length()];
+        for (String word : dict) {
+            int start = 0;
+            while (start >= 0) {
+                start = s.indexOf(word, start);
+                if (start < 0) {
+                    break;
+                }
+                int end = start + word.length();
+                for (int i = start; i < end; i++) {
+                    bold[i] = true;
+                }
+                start++; // Just start from next index, instead of iterating through entire string
+            }
+        }
+        StringBuilder sb = new StringBuilder();
+        for (int i = 0; i < s.length(); i++) {
+            if (bold[i] && (i == 0 || !bold[i - 1])) {
+                sb.append("<b>");
+            }
+            sb.append(s.charAt(i)); // Just go character by character rather than cutting up the string
+            if (bold[i] && (i + 1 == s.length() || !bold[i + 1])) {
+                sb.append("</b>");
+            }
+        }
+        return sb.toString();
     }
 
     ////https://leetcode.com/problems/add-bold-tag-in-string/discuss/104263/Java-solution-Same-as-Merge-Interval.
-    public String addBoldTag(String s, String[] dict) {
+    public String addBoldTag1(String s, String[] dict) {
 
         int index = -1;
         List<Interval> intervals = new ArrayList<>();

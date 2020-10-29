@@ -7,6 +7,13 @@ public class _0043_MultiplyStrings {
     }
 
     //https://leetcode.com/problems/multiply-strings/discuss/17605/Easiest-JAVA-Solution-with-Graph-Explanation
+    /*
+
+      Start from right to left, perform multiplication on every pair of digits, and add them together.
+      Let's draw the process! From the following draft, we can immediately conclude:
+     `num1[i] * num2[j]` will be placed at indices `[i + j`, `i + j + 1]`
+
+     */
     public String multiply(String num1, String num2) {
         int m = num1.length();
         int n = num2.length();

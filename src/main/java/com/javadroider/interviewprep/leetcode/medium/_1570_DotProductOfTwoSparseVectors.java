@@ -26,7 +26,7 @@ public class _1570_DotProductOfTwoSparseVectors {
                 return 0;
             }
 
-            if (indexMap.size() < vec.indexMap.size()) {
+            if (indexMap.size() > vec.indexMap.size()) {
                 return vec.dotProduct(this);
             }
 
