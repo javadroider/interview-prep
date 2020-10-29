@@ -36,6 +36,10 @@ Constraints:
 public class _1209_RemoveAllAdjacentDuplicatesInStringII {
 
 
+    public static void main(String[] args) {
+        System.out.println(new _1209_RemoveAllAdjacentDuplicatesInStringII().removeDuplicates("deeedbbcccbdaa", 3));
+    }
+
     public String removeDuplicates(String s, int k) {
         StringBuilder sb = new StringBuilder(s);
         Stack<Integer> counts = new Stack<>();

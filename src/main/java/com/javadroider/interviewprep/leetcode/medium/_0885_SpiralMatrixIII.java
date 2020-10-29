@@ -3,7 +3,7 @@ package com.javadroider.interviewprep.leetcode.medium;
 public class _0885_SpiralMatrixIII {
 
     public static void main(String[] args) {
-
+        new _0885_SpiralMatrixIII().spiralMatrixIII(5, 6, 1, 4);
     }
 
     public int[][] spiralMatrixIII(int R, int C, int r0, int c0) {

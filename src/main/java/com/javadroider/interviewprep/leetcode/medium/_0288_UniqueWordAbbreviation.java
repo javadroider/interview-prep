@@ -49,8 +49,17 @@ Constraints:
  */
 public class _0288_UniqueWordAbbreviation {
 
+    public static void main(String[] args) {
+        String[] dict = {"deer", "door", "cake", "card"};
+        ValidWordAbbr validWordAbbr = new ValidWordAbbr(dict);
+        System.out.println(validWordAbbr.isUnique("dear")); // return False
+        System.out.println(validWordAbbr.isUnique("cart")); // return True
+        System.out.println(validWordAbbr.isUnique("cane")); // return False
+        System.out.println(validWordAbbr.isUnique("make")); // return True
+    }
+
     //https://leetcode.com/problems/unique-word-abbreviation/solution/
-    class ValidWordAbbr {
+    static class ValidWordAbbr {
 
         private Map<String, Set<String>> map = new HashMap<>();
 

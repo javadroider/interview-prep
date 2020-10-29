@@ -26,6 +26,11 @@ You can't add 0 at the starting or ending of the number that's why add 0 only if
 
 
      */
+
+    public static void main(String[] args) {
+        System.out.println(new _0247_StrobogrammaticNumberII().findStrobogrammatic(4));
+    }
+
     public List<String> findStrobogrammatic(int n) {
         return recursiveBuild(n, n);
     }

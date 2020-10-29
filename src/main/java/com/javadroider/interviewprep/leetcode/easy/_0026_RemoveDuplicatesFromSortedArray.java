@@ -7,6 +7,7 @@ public class _0026_RemoveDuplicatesFromSortedArray {
         System.out.println(new _0026_RemoveDuplicatesFromSortedArray().removeDuplicates(nums));
     }
 
+    //0,0,1,1,1,2,2,3,3,4
     public int removeDuplicates(int[] nums) {
         int uniqueIndex = 0;
         for (int i = 1; i < nums.length; i++) {

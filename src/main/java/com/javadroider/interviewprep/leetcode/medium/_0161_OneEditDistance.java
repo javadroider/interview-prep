@@ -43,7 +43,7 @@ public class _0161_OneEditDistance {
         if (ns > nt) {
             return isOneEditDistance(t, s);
         }
-
+        //Input: s = "ab", t = "acb"
         // The strings are NOT one edit away distance
         // if the length diff is more than 1.
         if (nt - ns > 1) {

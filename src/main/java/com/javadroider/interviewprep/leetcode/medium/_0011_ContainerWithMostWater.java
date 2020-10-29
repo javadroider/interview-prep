@@ -15,7 +15,6 @@ public class _0011_ContainerWithMostWater {
             } else {
                 hi--;
             }
-
         }
         return max;
     }

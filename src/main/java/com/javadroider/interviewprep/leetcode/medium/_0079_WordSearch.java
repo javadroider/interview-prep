@@ -30,7 +30,6 @@ public class _0079_WordSearch {
         char temp = board[i][j];
         board[i][j] = ' ';
         boolean found = dfs(board, word, i + 1, j, count + 1) || dfs(board, word, i - 1, j, count + 1) || dfs(board, word, i, j - 1, count + 1) || dfs(board, word, i, j + 1, count + 1);
-
         board[i][j] = temp;
         return found;
 

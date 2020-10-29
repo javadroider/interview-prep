@@ -2,6 +2,10 @@ package com.javadroider.interviewprep.leetcode.easy;
 
 public class _0014_LongestCommonPrefix {
 
+    public static void main(String[] args) {
+        System.out.println(new _0014_LongestCommonPrefix().longestCommonPrefix(new String[]{"flow","flower","flight"}));
+    }
+
     //https://leetcode.com/problems/longest-common-prefix/solution/
     public String longestCommonPrefix(String[] strs) {
         if (strs.length == 0) {

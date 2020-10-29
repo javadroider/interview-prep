@@ -27,6 +27,7 @@ public class _0844_BackspaceStringCompare {
     }
 
     //Input: S = "ab#c", T = "ad#c"
+    //"ab##", "c#d#"
     public boolean backspaceCompare(String S, String T) {
         int sPtr = S.length() - 1;
         int tPtr = T.length() - 1;

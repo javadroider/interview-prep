@@ -24,9 +24,14 @@ public class _0019_RemoveNthNodeFromEnd {
 
     public ListNode removeNthFromEnd(ListNode head, int n) {
 
+        /*
+        Input: head = [1,2,3,4,5], n = 2
+        Output: [1,2,3,5]
+         */
+
         ListNode newHead = new ListNode(0);
         newHead.next = head;
-        ListNode p = newHead;
+        ListNode prev = newHead;
         ListNode runner = newHead;
         while (n > 0) {
             runner = runner.next;
@@ -34,9 +39,9 @@ public class _0019_RemoveNthNodeFromEnd {
         }
         while (runner.next != null) {
             runner = runner.next;
-            p = p.next;
+            prev = prev.next;
         }
-        p.next = p.next.next;
+        prev.next = prev.next.next;
         return newHead.next;
     }
 }

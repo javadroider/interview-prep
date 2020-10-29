@@ -21,8 +21,8 @@ public class _1060_MissingElementInSortedArray {
      */
 
     public static void main(String[] args) {
-        //int[] nums = {4, 7, 9, 10};
-        int[] nums = {1, 2, 4};
+        int[] nums = {4, 7, 9, 10};
+        //int[] nums = {1, 2, 4};
         int k = 3;
         System.out.println(new _1060_MissingElementInSortedArray().missingElement(nums, k));
     }
@@ -34,6 +34,7 @@ public class _1060_MissingElementInSortedArray {
         return nums[idx] - nums[0] - idx;
     }
 
+    //4, 7, 9, 10
     public int missingElement(int[] nums, int k) {
         int n = nums.length;
         // If kth missing number is larger than
@@ -56,6 +57,7 @@ public class _1060_MissingElementInSortedArray {
 
         // kth missing number is greater than nums[idx - 1]
         // and less than nums[idx]
+        // 7 + 3 - 2
         return nums[left - 1] + k - missing(left - 1, nums);
     }
 
