@@ -7,7 +7,7 @@ public class _0139_WordBreak {
     public static void main(String[] args) {
         _0139_WordBreak instance = new _0139_WordBreak();
         //System.out.println(instance.wordBreak("leetcode", Arrays.asList(new String[]{"leet", "code"})));
-        System.out.println(instance.wordBreakWithMemoization("catsandog", Arrays.asList(new String[]{"cats", "dog", "sand", "and", "cat"})));
+        System.out.println(instance.wordBreak("catsandog", Arrays.asList(new String[]{"cats", "dog", "sand", "and", "cat"})));
     }
 
     //https://leetcode.com/problems/word-break/solution/

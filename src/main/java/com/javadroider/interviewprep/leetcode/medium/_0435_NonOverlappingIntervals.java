@@ -16,6 +16,7 @@ public class _0435_NonOverlappingIntervals {
         Arrays.sort(intervals, (i1, i2) -> i1[1] - i2[1]);
         int end = intervals[0][1];
         int count = 0;
+        //{1, 2}, {1, 3}, {2, 3}, {3, 4}
         for (int i = 1; i < intervals.length; i++) {
             if (end > intervals[i][0]) {
                 count++;
