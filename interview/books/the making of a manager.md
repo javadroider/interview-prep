@@ -1,14 +1,16 @@
 A summary of my notes for reference:
 
-    Chapter One: What is Management?.
-        Your job as a manager is to get better outcomes from a group of people working together.
-        It’s the realization that you don’t have to do everything yourself, be the best at everything, or even know how to do everything
-        3 things managers thing about every day: people, purpose, and process
-        Moving to a managerial role means more focus on your team than yourself, more time with people, being a stable force for emotionally challenging situations
-        You don’t need to be a manager to move up in organizations; “individual contributor” roles allow for specialized work without managerial tasks
-        “What makes a good leader is that they eschew the spotlight in favor of spending time and energy to do what they need to do to support and protect their people.” …”In return, we offer our blood and sweat and tears and do everything we can to see our leader’s vision come to life.” - Simon Sinek, Leaders Eat Last
-        Only when you have built trust with your reports will you have the credibility to help them achieve more together.
-    Chapter Two: Your First Three Months
+## Chapter One: What is Management?.
+- Your job as a manager is to get better outcomes from a group of people working together.
+- It’s the realization that you don’t have to do everything yourself, be the best at everything, or even know how to do everything
+- 3 things managers thing about every day: people, purpose, and process
+- Moving to a managerial role means more focus on your team than yourself, more time with people, being a stable force for emotionally challenging situations
+- You don’t need to be a manager to move up in organizations; “individual contributor” roles allow for specialized work without managerial tasks
+- “What makes a good leader is that they eschew the spotlight in favor of spending time and energy to do what they need to do to support and protect their people.” …”In return, we offer our blood and sweat and tears and do everything we can to see our leader’s vision come to life.” - Simon Sinek, Leaders Eat Last
+- Only when you have built trust with your reports will you have the credibility to help them achieve more together.
+
+## Chapter Two: Your First Three Months
+
         Some good questions for new hires:
             What was more challenging than you expected?
             What was easier than you expected?
