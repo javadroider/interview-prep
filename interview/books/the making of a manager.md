@@ -10,17 +10,18 @@ A summary of my notes for reference:
 - Only when you have built trust with your reports will you have the credibility to help them achieve more together.
 
 ## Chapter Two: Your First Three Months
-
-        Some good questions for new hires:
-            What was more challenging than you expected?
-            What was easier than you expected?
-        As the manager of a growing team, a mistake that many people make is continuing individual contributor work past the point at which it is sustainable
-        Ways in which people become managers:
-            The Apprentice – Your manager’s team is growing, so you’ve been asked to manage a part of it going forward.
-            Pioneer – You are a founding member of a new group, and you’re now responsible for its growth
-            New Boss – You’re coming in to manage an already-established team, either within your existing organization or at a new one
-            Successor – Your manager has decided to leave, and you are taking his place
-    Chapter Three: Leading a Small Team
+- Some good questions for new hires:
+ - What was more challenging than you expected?
+ - What was easier than you expected?
+- As the manager of a growing team, a mistake that many people make is continuing individual contributor work past the point at which it is sustainable
+- Ways in which people become managers:
+            - The Apprentice – Your manager’s team is growing, so you’ve been asked to manage a part of it going forward.
+            - Pioneer – You are a founding member of a new group, and you’re now responsible for its growth
+            - New Boss – You’re coming in to manage an already-established team, either within your existing organization or at a new one
+            - Successor – Your manager has decided to leave, and you are taking his place
+    
+    
+## Chapter Three: Leading a Small Team
         Managing a small team is about mastering the following basic fundaments: developing a healthy manager-report relationship and creating an environment of support.
         Trust is the most important ingredient for successful managers
         Reports should feel able to:
