@@ -6,16 +6,16 @@
   - [My examples](https://github.com/javadroider/interview-prep/tree/master/src/main/java/com/javadroider/interviewprep/designpatterns)
 - [Design principles](https://github.com/javadroider/interview-prep/blob/master/interview/concepts/Design%20Principles.md)
 - [Architectural patterns](https://github.com/javadroider/interview-prep/blob/master/interview/concepts/Architectural%20Patterns.md)
-  - [FAAS and event-driven architecture](https://www.youtube.com/watch?v=h-vD_hycQjk)
+  - [FAAS and event-driven architecture - video](https://www.youtube.com/watch?v=h-vD_hycQjk)
 - [Micro services](https://github.com/javadroider/interview-prep/blob/master/interview/concepts/Microservices.md)
   - [Distributed tracing](https://dzone.com/articles/tracing-in-microservices-with-spring-cloud-sleuth)
   - [Service discovery using netflix eureka](https://dzone.com/articles/netflix-eureka-discovery-microservice)
   - [Circuit Breaker Using Netflix Hystrix](https://docs.google.com/presentation/d/1hLitnkkutf-aL3DAnYCsmUwattoSe_ZBlSzVUEXfNw8/edit?usp=sharing)
   - [Distributed transactions](https://developers.redhat.com/blog/2018/10/01/patterns-for-distributed-transactions-within-a-microservices-architecture/)
   - [Blue green deployment](https://dzone.com/articles/blue-green-deployment-for-cloud-native-application)
-  - [Bulk head pattern](https://www.youtube.com/watch?v=R2FT5edyKOg)
-  - [Strangler pattern](https://www.youtube.com/watch?v=8h3moilCpQ4)
-  - [Service mesh](https://www.youtube.com/watch?v=QiXK0B9FhO0&t=10s)
+  - [Bulk head pattern - video](https://www.youtube.com/watch?v=R2FT5edyKOg)
+  - [Strangler pattern - video](https://www.youtube.com/watch?v=8h3moilCpQ4)
+  - [Service mesh - video](https://www.youtube.com/watch?v=QiXK0B9FhO0&t=10s)
 - [CAP theorem](https://github.com/javadroider/interview-prep/blob/master/interview/concepts/CAP%20Theorem.md)
 - Spring
   - [Spring cache](https://howtodoinjava.com/spring-boot2/spring-boot-cache-example/)
@@ -211,5 +211,3 @@ Misc Problems
 5. [Find Itinerary from a given list of tickets](https://www.geeksforgeeks.org/find-itinerary-from-a-given-list-of-tickets/)
 6. [Minimum Number of Platforms Required for a Railway/Bus Station](https://www.geeksforgeeks.org/minimum-number-platforms-required-railwaybus-station/)
 7. [Find the first circular tour that visits all petrol pumps](https://www.geeksforgeeks.org/find-a-tour-that-visits-all-stations/)
-
-
