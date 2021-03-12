@@ -21,7 +21,7 @@
   - [Spring cache](https://howtodoinjava.com/spring-boot2/spring-boot-cache-example/)
   - [Overview of Spring-Boot Dev Tools](https://www.baeldung.com/spring-boot-devtools)
   - [What is the Difference Between JPA and Hibernate?](https://dzone.com/articles/what-is-the-difference-between-hibernate-and-sprin-1#)
-  - [Spring Singleton scope](https://dzone.com/articles/an-interview-question-on-spring-singletons)
+  - [Spring Singleton scope](https://dzone.com/articles/an-interview-question-on-spring-singletons) | [Spring bean scope](https://www.baeldung.com/spring-bean-scopes)
   - How Springboot works
     - [Spring Boot Architecture - video](https://youtu.be/3eA8AiCV5oE)
     - [All About Spring Boot Starters - video](https://youtu.be/oSVwNqwkw-M)
