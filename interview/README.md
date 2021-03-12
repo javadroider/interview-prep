@@ -60,6 +60,7 @@
   - [Annotations](https://dzone.com/articles/explore-annotations-in-java-8)
   - [AOT vs JIT compilation in Java - video](https://www.youtube.com/watch?v=sJVenujWGjs)
   - [Phaser vs CountDownLatch vs CyclicBarrier - video](https://www.youtube.com/watch?v=J3QZ5gfCtAg)
+  - [Java - NIO](http://tutorials.jenkov.com/java-nio/index.html)
 - [Kafka](https://github.com/javadroider/kafka-tutorial)
   - Connect
   - Stream
