@@ -8,6 +8,7 @@
 - [Architectural patterns](https://github.com/javadroider/interview-prep/blob/master/interview/concepts/Architectural%20Patterns.md)
   - [FAAS and event-driven architecture - video](https://www.youtube.com/watch?v=h-vD_hycQjk)
 - [Micro services](https://github.com/javadroider/interview-prep/blob/master/interview/concepts/Microservices.md)
+  - [Principles for Microservice Design](https://www.infoq.com/articles/microservices-design-ideals/)   
   - [Distributed tracing](https://dzone.com/articles/tracing-in-microservices-with-spring-cloud-sleuth)
   - [Service discovery using netflix eureka](https://dzone.com/articles/netflix-eureka-discovery-microservice)
   - [Circuit Breaker Using Netflix Hystrix](https://docs.google.com/presentation/d/1hLitnkkutf-aL3DAnYCsmUwattoSe_ZBlSzVUEXfNw8/edit?usp=sharing)
