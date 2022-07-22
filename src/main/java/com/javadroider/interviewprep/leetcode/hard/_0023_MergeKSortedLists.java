@@ -24,6 +24,7 @@ public class _0023_MergeKSortedLists {
         ListNode dummy = new ListNode(0);
         ListNode head = dummy;
         PriorityQueue<ListNode> pq = new PriorityQueue<>(lists.size(), (o1,o2) -> Integer.compare(o1.val, o2.val));
+
         for (ListNode list : lists) {
             if (list != null) {
                 pq.add(list);

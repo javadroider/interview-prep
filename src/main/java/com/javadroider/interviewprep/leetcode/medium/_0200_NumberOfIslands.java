@@ -19,7 +19,7 @@ public class _0200_NumberOfIslands {
 
                 if(grid[row][col] == '1'){
                     count++;
-                    bfs(grid, row, col);
+                    dfs(grid, row, col);
                 }
             }
         }
@@ -27,7 +27,7 @@ public class _0200_NumberOfIslands {
         return count;
     }
 
-    private void bfs(char grid[][], int row, int col){
+    private void dfs(char grid[][], int row, int col){
 
         if(row < 0 || row >= grid.length || col < 0 || col >= grid[row].length || grid[row][col] == '0'){
             return;
@@ -36,13 +36,13 @@ public class _0200_NumberOfIslands {
         grid[row][col] = '0';
 
         //left
-        bfs(grid, row, col - 1);
+        dfs(grid, row, col - 1);
         //right
-        bfs(grid, row, col + 1);
+        dfs(grid, row, col + 1);
         //up
-        bfs(grid, row + 1, col);
+        dfs(grid, row + 1, col);
         //down
-        bfs(grid, row - 1, col);
+        dfs(grid, row - 1, col);
 
     }
 }
