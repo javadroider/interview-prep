@@ -6,7 +6,7 @@ import java.util.Map;
 public class _0003_LongestSubstringWithoutRepeatingCharacters {
 
     public static void main(String[] args) {
-        System.out.println(new _0003_LongestSubstringWithoutRepeatingCharacters().lengthOfLongestSubstring("abcabcbb"));
+        System.out.println(new _0003_LongestSubstringWithoutRepeatingCharacters().lengthOfLongestSubstring("abba"));
     }
 
     /*
@@ -21,7 +21,9 @@ public class _0003_LongestSubstringWithoutRepeatingCharacters {
         Map<Character, Integer> map = new HashMap<>();
         while (right < s.length()) {
             if (map.containsKey(s.charAt(right))) {
-                left = Math.max(map.get(s.charAt(right)) + 1, left);
+                //left = Math.max(map.get(s.charAt(right)) + 1, left);
+                //It will fail for string 'abba' if we don't take max
+                left = map.get(s.charAt(right)) + 1;
             }
             map.put(s.charAt(right), right);
             res = Math.max(res, right - left + 1);
