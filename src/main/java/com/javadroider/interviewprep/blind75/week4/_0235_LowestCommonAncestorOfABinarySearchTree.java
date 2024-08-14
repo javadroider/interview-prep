@@ -1,15 +1,13 @@
-package com.javadroider.interviewprep.leetcode.medium;
+package com.javadroider.interviewprep.blind75.week4;
 
 import com.javadroider.interviewprep.util.TreeNode;
 
-public class _0236_LowestCommonAncestorOfABinaryTree {
+public class _0235_LowestCommonAncestorOfABinarySearchTree {
 
+    //https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/solutions/4811053/easy-java-solution/
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {
-        if (root == null) {
-            return null;
-        }
 
-        if (root == p || root == q) {
+        if (root == null || root == p || root == q) {
             return root;
         }
 
@@ -18,8 +16,10 @@ public class _0236_LowestCommonAncestorOfABinaryTree {
 
         if (left != null && right != null) {
             return root;
-        } else {
-            return left != null ? left : right;
         }
+        if (left == null) {
+            return right;
+        }
+        return left;
     }
 }
