@@ -35,6 +35,6 @@ public class _0118_PascalsTriangle {
             triangle.add(currRow);
         }
 
-
+        return triangle;
     }
 }
